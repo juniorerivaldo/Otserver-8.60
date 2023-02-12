@@ -1,2 +1,13 @@
 <?xml version="1.0"?>
-<spawns />
+<spawns>
+	<spawn centerx="107" centery="52" centerz="7" radius="3">
+		<monster name="Chicken" x="-2" y="-2" z="7" spawntime="100" />
+		<monster name="Pig" x="-1" y="-1" z="7" spawntime="700" />
+		<monster name="Chicken" x="-3" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="115" centery="69" centerz="7" radius="5">
+		<monster name="Sheep" x="-1" y="-2" z="7" spawntime="60" />
+		<monster name="Sheep" x="-3" y="-1" z="7" spawntime="60" />
+		<monster name="Sheep" x="-2" y="2" z="7" spawntime="60" />
+	</spawn>
+</spawns>
