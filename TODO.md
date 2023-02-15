@@ -15,3 +15,13 @@
 ### SITE
 
 ### SCRIPTS
+
+### QUESTS
+
+    ##Astoria Free
+    POI
+
+### HOUSES
+
+    ##Astoria
+        10
