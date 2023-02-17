@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<npc name="Spell Seller" script="spell_trade.lua" walkinterval="50000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="129" head="95" body="116" legs="121" feet="115" addons="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Hello |PLAYERNAME|.I have many {spells} to sell for you! {trade}" />
+	</parameters>
+</npc>

@@ -1,27 +1,34 @@
 ### MAP
 
+## Astoria
+
 [x] npc armor
 [x] npc potions
 [x] npc food
-[] npc runes
-[] npc wands
-[] npc bank
+[x] npc runes
+[x] npc wands
+[x] npc bank
 [x] npc sword & shields
 [x] npc paladin
-[] npc itens house
+[x] npc itens house
 [] npc addons
-[] npc quest
-
-### SITE
-
-### SCRIPTS
-
-### QUESTS
-
-    ##Astoria Free
-    POI
+[x] npc quest
+[x] npc ferramentas
 
 ### HOUSES
 
     ##Astoria
         10
+
+### QUESTS
+
+    ##Astoria Free
+    Anihi
+
+## A FAZER MAP
+
+    colocar protected zone nos npcs
+
+### SITE
+
+### SCRIPTS

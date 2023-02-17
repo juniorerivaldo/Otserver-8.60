@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <spawns>
+	<spawn centerx="42" centery="122" centerz="6" radius="1">
+		<npc name="Roy" x="0" y="1" z="6" spawntime="60" />
+	</spawn>
 	<spawn centerx="125" centery="194" centerz="6" radius="1">
 		<monster name="Amazon" x="-1" y="0" z="6" spawntime="60" />
 	</spawn>
@@ -12,6 +15,12 @@
 	</spawn>
 	<spawn centerx="109" centery="215" centerz="6" radius="1">
 		<monster name="Valkyrie" x="-1" y="0" z="6" spawntime="60" />
+	</spawn>
+	<spawn centerx="90" centery="21" centerz="7" radius="1">
+		<npc name="Spell Seller" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="94" centery="22" centerz="7" radius="1">
+		<npc name="Caedmon" x="-1" y="0" z="7" spawntime="50" />
 	</spawn>
 	<spawn centerx="71" centery="33" centerz="7" radius="1">
 		<npc name="Gorn" x="0" y="0" z="7" spawntime="60" />
@@ -38,6 +47,9 @@
 		<monster name="Goblin" x="3" y="-3" z="7" spawntime="60" />
 		<monster name="Elf" x="-4" y="-1" z="7" spawntime="60" />
 		<monster name="Goblin" x="3" y="3" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="40" centery="124" centerz="7" radius="1">
+		<npc name="Varkhal" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="165" centery="128" centerz="7" radius="2">
 		<monster name="Deer" x="-1" y="-1" z="7" spawntime="60" />
@@ -331,6 +343,7 @@
 	<spawn centerx="86" centery="153" centerz="8" radius="2">
 		<monster name="Minotaur" x="-1" y="0" z="8" spawntime="60" />
 	</spawn>
+	<spawn centerx="100" centery="24" centerz="9" radius="5" />
 	<spawn centerx="120" centery="46" centerz="9" radius="1">
 		<monster name="Poison spider" x="-1" y="1" z="9" spawntime="60" />
 	</spawn>
