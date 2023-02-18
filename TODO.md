@@ -3,17 +3,18 @@
 ## Astoria
 
 [x] npc armor
-[x] npc potions
+[x] npc potions ok
 [x] npc food
-[x] npc runes
-[x] npc wands
-[x] npc bank
+[x] npc runes ok
+[x] npc wands ok
+[x] npc bank ok
 [x] npc sword & shields
 [x] npc paladin
-[x] npc itens house
+[] npc itens house
 [] npc addons
 [x] npc quest
 [x] npc ferramentas
+[x] npc tasks
 
 ### HOUSES
 
