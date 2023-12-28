@@ -25,12 +25,12 @@ bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
-maxPlayers = 0
-motd = "Welcome to The Forgotten Server!"
+maxPlayers = 100
+motd = "Bem vindo ao Devplex"
 onePlayerOnlinePerAccount = true
 allowClones = false
 allowWalkthrough = true
-serverName = "Forgotten"
+serverName = "Devplex"
 statusTimeout = 5000
 replaceKickOnLogin = true
 maxPacketsPerSecond = 25
@@ -58,7 +58,7 @@ timeBetweenExActions = 1000
 -- Map
 -- NOTE: set mapName WITHOUT .otbm at the end
 mapName = "Umero"
-mapAuthor = "Komic"
+mapAuthor = "Devplex"
 
 -- Market
 marketOfferDuration = 30 * 24 * 60 * 60
@@ -67,10 +67,10 @@ checkExpiredMarketOffersEachMinutes = 60
 maxMarketOffersAtATimePerPlayer = 100
 
 -- MySQL
-mysqlHost = "127.0.0.1"
-mysqlUser = "erivaldo"
-mysqlPass = "g38ddvnz"
-mysqlDatabase = "umero"
+mysqlHost = "185.211.7.154"
+mysqlUser = "u463912247_umero"
+mysqlPass = "@24MexvN#hVxRuX"
+mysqlDatabase = "u463912247_umero"
 mysqlPort = 3306
 mysqlSock = ""
 
@@ -166,5 +166,5 @@ startupDatabaseOptimization = false
 -- Status Server Information
 ownerName = ""
 ownerEmail = ""
-url = "https://otland.net/"
-location = "Sweden"
+url = "https://devplex.net.br"
+location = "Brazil"
