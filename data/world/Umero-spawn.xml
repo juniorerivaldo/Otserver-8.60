@@ -1,9 +1,24 @@
 <?xml version="1.0"?>
 <spawns>
+	<spawn centerx="1025" centery="995" centerz="5" radius="1">
+		<npc name="Ferramentas" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="1030" centery="995" centerz="5" radius="1">
+		<npc name="Potions &amp; Rings seller" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
 	<spawn centerx="1072" centery="997" centerz="5" radius="1">
 		<npc name="Banker" x="0" y="0" z="5" spawntime="60" />
 	</spawn>
+	<spawn centerx="1040" centery="1006" centerz="5" radius="1">
+		<npc name="Ferramentas" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
 	<spawn centerx="1050" centery="1019" centerz="5" radius="1">
 		<npc name="Amuletseller" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="1072" centery="1028" centerz="5" radius="1">
+		<npc name="Food" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
+	<spawn centerx="1040" centery="1063" centerz="5" radius="1">
+		<npc name="Soraya" x="0" y="0" z="5" spawntime="60" />
 	</spawn>
 </spawns>
