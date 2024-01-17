@@ -1,12 +1,73 @@
-local firstItems = {2050, 2382, 8723}
+local firstItems = {}
+firstItems[0] =
+{
+2173,
+2525,
+3965,
+2124,
+2457,
+2647,
+2643
+}
+firstItems[1] =
+{
+2173,
+2525,
+8922,
+2124,
+2457,
+2647,
+2643
+}
+firstItems[2] =
+{
+2173,
+2525,
+8922,
+2124,
+2457,
+2647,
+2643
+}
+firstItems[3] =
+{
+2173,
+2525,
+8851,
+2543,
+2124,
+2457,
+2647,
+2643
+}
+firstItems[4] =
+{
+2173,
+2525,
+8926,
+7403,
+2124,
+2457,
+2647,
+2643
+}
 
-function onLogin(player)
-	if player:getLastLoginSaved() == 0 then
-		for i = 1, #firstItems do
-			player:addItem(firstItems[i], 1)
-		end
-		player:addItem(player:getSex() == 0 and 2651 or 2650, 1)
-		player:addItem(ITEM_BAG, 1):addItem(2674, 1)
-	end
-	return true
+function onLogin(cid)
+if getPlayerStorageValue(cid, 30001) == -1 then
+for i = 1, table.maxn(firstItems[getPlayerVocation(cid)]) do
+doPlayerAddItem(cid, firstItems[getPlayerVocation(cid)], 1)
+end
+if getPlayerSex(cid) == 0 then
+doPlayerAddItem(cid, 2463, 1)
+else
+doPlayerAddItem(cid, 2463, 1)
+end
+local bag = doPlayerAddItem(cid, 1988, 1)
+doAddContainerItem(bag, 2160, 4)
+doAddContainerItem(bag, 2554, 1)
+doAddContainerItem(bag, 2120, 1)
+doAddContainerItem(bag, 7618, 1)
+setPlayerStorageValue(cid, 30001, 1)
+end
+return TRUE
 end
