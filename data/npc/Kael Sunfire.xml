@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Kael Sunfire" script="kael_sunfire.lua" walkinterval="2000" floorchange="0">
+     <health now="100" max="100"/>
+     <look type="129" head="95" body="116" legs="121" feet="115" addons="3"/>
+     <parameters>
+         <parameter key="message_greet" value="Ola |PLAYERNAME|. Quer se aventurar em alguma tarefa ? Digite {task} para receber sua missão." />
+     </parameters>
+</npc>

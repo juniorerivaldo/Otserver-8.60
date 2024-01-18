@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Thalara Shadowblade" script="thalara_shadowblade.lua" walkinterval="2000" floorchange="0">
+<health now="100" max="100"/>
+<look type="139" head="95" body="57" legs="102" feet="115" addons="0"/>
+<voices>
+<voice text="Compro seus espólios de guerra!" interval2="3000" margin="1" yell="yes"/>
+</voices>
+</npc>

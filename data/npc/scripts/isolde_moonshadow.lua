@@ -35,6 +35,7 @@ shopModule:addBuyableItem({'dwarven ring'}, 2213, 5000, 1, 'dwarven ring')
 shopModule:addBuyableItem({'ring of healing'}, 2214, 5000, 1, 'ring of healing')
 
 
+shopModule:addSellableItem({'vial'}, 2006, 5, 'vial')
 shopModule:addSellableItem({'normal potion flask', 'normal flask'}, 7636, 5, 'empty small potion flask')
 shopModule:addSellableItem({'strong potion flask', 'strong flask'}, 7634, 10, 'empty strong potion flask')
 shopModule:addSellableItem({'great potion flask', 'great flask'}, 7635, 15, 'empty great potion flask')
