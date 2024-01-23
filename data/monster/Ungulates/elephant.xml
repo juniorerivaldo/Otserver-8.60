@@ -20,10 +20,11 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="30" attack="50"/>
 	</attacks>
-	<defenses armor="20" defense="20"/>
+	<defenses armor="20" defense="16"/>
 	<elements>
-		<element physicalPercent="25"/>
+		<element physicalPercent="15"/>
 		<element icePercent="20"/>
+		<element firePercent="20"/>
 		<element energyPercent="-10"/>
 	</elements>
 	<voices interval="5000" chance="10">
@@ -34,7 +35,7 @@
 	<loot>
 		<item id="2671" countmax="4" chance="15000"/><!-- ham -->
 		<item id="2666" countmax="3" chance="30000"/><!-- meat -->
-		<item id="3956" countmax="2" chance="3850"/><!-- tusk -->
-		<item id="3973" chance="100"/><!-- tusk shield -->
+		<item id="3956" countmax="2" chance="3500"/><!-- elephant tusk -->
+		<item id="3973" chance="200"/><!-- tusk shield -->
 	</loot>
 </monster>

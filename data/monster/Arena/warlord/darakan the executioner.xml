@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Darakan the Executioner" nameDescription="darakan the executioner" race="blood" experience="1600" speed="205" manacost="0">
-	<health now="3480" max="3480"/>
+	<health now="3500" max="3500"/>
 	<look type="255" head="78" body="114" legs="114" feet="114" corpse="7349"/>
 	<strategy attack="100" defense="0"/>
 	<flags>
@@ -14,18 +14,18 @@
 		<flag targetdistance="1"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-260" />
-		<attack name="physical" interval="1000" chance="100" min="0" max="-135">
+		<attack name="melee" interval="2000" skill="50" attack="70"/>
+		<attack name="physical" interval="1000" chance="100" min="-72" max="-130">
 			<attribute key="shootEffect" value="spear"/>
 		</attack>
 	</attacks>
-	<defenses armor="31" defense="31">
-		<defense name="healing" interval="6000" chance="65" min="30" max="60">
+	<defenses armor="30" defense="31">
+		<defense name="healing" interval="6000" chance="65" min="20" max="50">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>
 	<elements>
-		<element icePercent="11"/>
+		<element icePercent="33"/>
 		<element firePercent="-11"/>
 	</elements>
 	<immunities>

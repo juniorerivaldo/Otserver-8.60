@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Eternal Guardian" nameDescription="a eternal guardian" race="blood" experience="1800" speed="420" manacost="0">
 <health now="2500" max="2500"/>
-<look type="345" corpse="11300"/>
+<look type="345" corpse="11278"/>
 <targetchange interval="2000" chance="5"/>
 <strategy attack="100" defense="0"/>
 	<flags>
@@ -35,18 +35,9 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<loot>
-		<item id="2148" countmax="100" chance="31575" /><!-- gold coin -->
-		<item id="2152" countmax="4" chance="31575" /><!-- platinum coin -->
+		<item id="2148" countmax="60" chance="31575" /><!-- gold coin -->
 		<item id="1294" countmax="10" chance="16900" /><!-- small stone -->
-		<item id="10549" chance="5625" /><!-- ancient stone -->
 		<item id="11227" chance="1000" /><!-- shiny stone -->
-		<item id="11325" chance="9000" /><!-- spiked iron ball -->
-		<item id="11323" chance="2000" /><!-- zaoan halberd -->
-		<item id="5880" chance="1000" /><!-- iron ore -->
-		<item id="2528" chance="800" /><!-- tower shield -->
-		<item id="11339" chance="700" /><!-- clay lump -->
-		<item id="2427" chance="500" /><!-- guardian halberd -->
-		<item id="11343" chance="400" /><!-- piece of marble rock -->
-		<item id="11307" chance="90" /><!-- zaoan sword -->
+		<item id="10549" chance="5625" /><!-- ancient stone -->
 	</loot>
 </monster>

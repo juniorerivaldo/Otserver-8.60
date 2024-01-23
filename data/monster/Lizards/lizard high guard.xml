@@ -24,8 +24,8 @@
 			<attribute key="areaEffect" value="poison"/>
 		</attack>
 	</attacks>
-	<defenses armor="40" defense="40">
-		<defense name="healing" interval="2000" chance="10" min="25" max="75">
+	<defenses armor="25" defense="25">
+		<defense name="healing" interval="2000" chance="10" min="160" max="200">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>
@@ -43,23 +43,21 @@
 		<voice sentence="Engage zze aggrezzor!"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="33725" /><!-- gold coin -->
-		<item id="2148" countmax="100" chance="33725" /><!-- gold coin -->
-		<item id="2148" countmax="30" chance="33725" /><!-- gold coin -->	
-		<item id="7588" chance="12425" /><!-- strong health potion -->
-		<item id="11325" chance="7525" /><!-- spiked iron ball -->
-		<item id="11245" chance="5550" /><!-- bunch of ripe rice -->
-		<item id="2152" countmax="2" chance="4350" /><!-- platinum coin -->
-		<item id="11332" chance="3550" /><!-- high guard flag -->
-		<item id="2149" countmax="4" chance="2075" /><!-- small emerald -->
-		<item id="11206" chance="1650" /><!-- red lantern -->
 		<item id="2528" chance="1500" /><!-- tower shield -->
+		<item id="11332" chance="3550" /><!-- high guard flag -->
+		<item id="11303" chance="1275" /><!-- zaoan shoes -->
 		<item id="5876" chance="1525" /><!-- lizard leather -->
-		<item id="5881" countmax="3" chance="1475" /><!-- lizard scale -->
-		<item id="11304" chance="700" /><!-- zaoan legs -->	
-		<item id="11303" chance="600" /><!-- zaoan shoes -->
-		<item id="11301" chance="80" /><!-- zaoan armor -->
 		<item id="11333" chance="8550" /><!-- high guard shoulderplates -->
+		<item id="5881" countmax="3" chance="1475" /><!-- lizard scale -->
+		<item id="11325" chance="7525" /><!-- spiked iron ball -->
+		<item id="2149" countmax="4" chance="2075" /><!-- small emerald -->
+		<item id="7588" chance="12425" /><!-- strong health potion -->
+		<item id="11245" chance="5550" /><!-- bunch of ripe rice -->
 		<item id="7591" chance="7375" /><!-- great health potion -->
+		<item id="2152" countmax="2" chance="4350" /><!-- platinum coin -->
+		<item id="2148" countmax="100" chance="33725" /><!-- gold coin -->
+		<item id="2148" countmax="100" chance="33725" /><!-- gold coin -->
+		<item id="2148" countmax="27" chance="33725" /><!-- gold coin -->
+		<item id="11206" chance="1650" /><!-- red lantern -->
 	</loot>
 </monster>

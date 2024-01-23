@@ -19,29 +19,29 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="100" attack="40"/>
-		<attack name="fire" interval="2000" chance="17" range="7" radius="4" target="1" min="-100" max="-200">
+		<attack name="fire" interval="2000" chance="17" range="7" radius="4" target="1" min="-60" max="-180">
 			<attribute key="shootEffect" value="fire"/>
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
 		<attack name="firefield" interval="1000" chance="15" range="7" radius="4" target="1">
 			<attribute key="shootEffect" value="fire"/>
 		</attack>
-		<attack name="fire" interval="3000" chance="17" length="8" spread="3" min="-150" max="-300">
+		<attack name="fire" interval="3000" chance="17" length="8" spread="3" min="-70" max="-250">
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
 	</attacks>
-	<defenses armor="34" defense="34">
+	<defenses armor="22" defense="35">
 		<defense name="healing" interval="1000" chance="25" min="57" max="93">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>
 	<elements>
-		<element earthPercent="80"/>
+		<element firePercent="100"/>
+		<element earthPercent="90"/>
 		<element energyPercent="20"/>
 		<element icePercent="-10"/>
 	</elements>
 	<immunities>
-		<immunity fire="1"/>
 		<immunity paralyze="1"/>
 		<immunity invisible="1"/>
 	</immunities>
@@ -52,25 +52,25 @@
 	<loot>
 		<item id="2148" countmax="90" chance="33750"/><!-- gold coin -->
 		<item id="2148" countmax="80" chance="33750"/><!-- gold coin -->
-		<item id="2148" countmax="76" chance="33750"/><!-- gold coin -->
-		<item id="2672" countmax="5" chance="11500"/><!-- dragon ham -->
-		<item id="2796" chance="12000"/><!-- green mushroom -->
-		<item id="7378" countmax="3" chance="5500"/><!-- royal spear -->
+		<item id="2148" countmax="60" chance="33750"/><!-- gold coin -->
 		<item id="1976" chance="10000"/><!-- gemmed book -->
-		<item id="2547" countmax="7" chance="5000"/><!-- power bolt -->
-		<item id="2167" chance="7000"/><!-- energy ring -->
-		<item id="2146" chance="5300"/><!-- small sapphire -->
+		<item id="2672" countmax="5" chance="11500"/><!-- dragon ham -->
+		<item id="7399" chance="200"/><!-- dragon lord trophy -->
+		<item id="2167" chance="5250"/><!-- energy ring -->
+		<item id="2392" chance="750"/><!-- fire sword -->
 		<item id="2033" chance="2650"/><!-- golden mug -->
-		<item id="5948" chance="1000"/><!-- red dragon leather -->
-		<item id="5882" chance="2000"/><!-- red dragon scale -->	
-		<item id="7588" chance="950"/><!-- strong health potion -->
-		<item id="2177" chance="2000"/><!-- life crystal -->
+		<item id="2796" chance="12000"/><!-- green mushroom -->
+		<item id="2177" chance="950"/><!-- life crystal -->
+		<item id="2547" countmax="7" chance="2500"/><!-- power bolt -->
+		<item id="5948" chance="750"/><!-- red dragon leather -->
+		<item id="5882" chance="1750"/><!-- red dragon scale -->
+		<item id="2498" chance="250"/><!-- royal helmet -->
+		<item id="7378" countmax="3" chance="5500"/><!-- royal spear -->
+		<item id="2146" chance="5300"/><!-- small sapphire -->
 		<item id="2479" chance="250"/><!-- strange helmet -->
-		<item id="2392" chance="1750"/><!-- fire sword -->
-		<item id="2528" chance="1500"/><!-- tower shield -->
-		<item id="2498" chance="1000"/><!-- royal helmet -->
-		<item id="2492" chance="1000"/><!-- dragon scale mail -->
-		<item id="7402" chance="1200"/><!-- dragon slayer -->
-		<item id="7399" chance="400"/><!-- dragon lord trophy -->
+		<item id="7588" chance="950"/><!-- strong health potion -->
+		<item id="2528" chance="950"/><!-- tower shield -->
+		<item id="7402" chance="150"/><!-- dragon slayer -->
+		<item id="2492" chance="200"/><!-- dragon scale mail -->
 	</loot>
 </monster>

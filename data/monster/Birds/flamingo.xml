@@ -16,8 +16,5 @@
 		<flag staticattack="90"/>
 		<flag runonhealth="25"/>
 	</flags>
-	<defenses armor="1" defense="1"/>
-	<loot>
-		<item id="12640"  chance="100"/><!-- downy feather -->
-	</loot>
+	<defenses armor="1" defense="6"/>
 </monster>

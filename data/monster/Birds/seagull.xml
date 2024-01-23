@@ -20,9 +20,5 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="10" attack="3"/>
 	</attacks>
-	<defenses armor="2" defense="2">
-	<defense name="speed" interval="5000" chance="50" duration="2500" speedchange="100">
-			<attribute key="areaEffect" value="redshimmer"/>
-		</defense>
-	</defenses>
+	<defenses armor="5" defense="5"/>
 </monster>

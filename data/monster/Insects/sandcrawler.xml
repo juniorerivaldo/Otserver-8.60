@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Sandcrawler" nameDescription="a sandcrawler" race="venom" experience="20" speed="220" manacost="250">
 <health now="30" max="30"/>
-<look type="350" corpse="11360"/>
+<look type="350" corpse="11357"/>
 <targetchange interval="5000" chance="12"/>
 <strategy attack="100" defense="0"/>
 	<flags>
@@ -20,9 +20,9 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="10" attack="3"/>
 	</attacks>
-		<defenses armor="2" defense="2"/>
+		<defenses armor="16" defense="19"/>
 	<elements>
-		<element firePercent="-10"/>
+		<element firePercent="-2"/>
 	</elements>
 	<voices interval="5000" chance="10">
 		<voice sentence="Chrk chrk!"/>

@@ -32,7 +32,6 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2152" countmax="3" chance="83825" /> <!-- platinum coin -->
 		<item id="2148" countmax="65" chance="66900" /> <!-- gold coin -->
 		<item id="3973" chance="83825" /> <!-- tusk shield -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Drasilla" nameDescription="drasilla" race="blood" experience="700" speed="170" manacost="0">
-	<health now="1260" max="1260"/>
+	<health now="1320" max="1320"/>
 	<look type="34" corpse="7349"/>
 	<strategy attack="100" defense="0"/>
 	<flags>
@@ -15,11 +15,11 @@
 		<flag runonhealth="100"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-120"/>
-		<attack name="fire" interval="6000" chance="60" min="-80" max="-160" length="8" spread="3">
+		<attack name="melee" interval="2000" skill="30" attack="60"/>
+		<attack name="fire" interval="6000" chance="60" min="-100" max="-180" length="8" spread="3">
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
-		<attack name="fire" interval="3000" range="10" radius="5" target="1" chance="50" min="-60" max="-110">
+		<attack name="fire" interval="3000" range="10" radius="5" target="1" chance="50" min="-70" max="-115">
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
 	</attacks>
@@ -29,11 +29,11 @@
 		</defense>
 	</defenses>
 	<elements>
+		<element firePercent="100"/>
 		<element energyPercent="20"/>
 		<element icePercent="-10"/>
 	</elements>
 	<immunities>
-		<immunity fire="1"/>
 		<immunity outfit="1"/>
 		<immunity drunk="1"/>
 		<immunity invisible="1"/>

@@ -33,7 +33,6 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="7618" countmax="5" chance="51100" /> <!-- health potion -->
 		<item id="2647" chance="44025" /> <!-- plate legs -->
 		<item id="2148" countmax="100" chance="50675" /> <!-- gold coin -->

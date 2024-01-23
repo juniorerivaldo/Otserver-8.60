@@ -19,33 +19,16 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="30" attack="50"/>
-		<attack name="death" interval="3000" chance="25" radius="4" min="-35" max="-60">
-			<attribute key="areaEffect" value="greenspark"/>
-		</attack>
-		<attack name="death" interval="3000" chance="8" length="5" spread="0" min="-40" max="-52">
-			<attribute key="areaEffect" value="mortarea"/>
-		</attack>
 	</attacks>
-	<defenses armor="15" defense="15">
-		<defense name="healing" interval="4000" chance="5" min="30" max="50">
-			<attribute key="areaEffect" value="blueshimmer"/>
-		</defense>
-	</defenses>
+	<defenses armor="10" defense="10"/>
 	<elements>
 		<element firePercent="-10"/>
 		<element physicalPercent="30"/>
-		<element holyPercent="-10"/>
-		<element icePercent="10"/>
-		<element energyPercent="-10"/>
+		<element holyPercent="-25"/>
+		<element icePercent="20"/>
+		<element energyPercent="-5"/>
 	</elements>
-	<immunities>
-		<immunity death="1"/>
-		<immunity earth="1"/>
-		<immunity lifedrain="1"/>
-		<immunity paralyze="1"/>
-		<immunity invisible="1"/>
-	</immunities>
-	<summons maxSummons="3">
+	<summons maxSummons="2">
 		<summon name="Death Blob" interval="3000" chance="10"/>
 	</summons>
 	<loot>

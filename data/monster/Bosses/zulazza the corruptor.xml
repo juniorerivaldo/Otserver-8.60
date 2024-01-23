@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <monster name="Zulazza the Corruptor" nameDescription="a zulazza the corruptor" race="blood" experience="9800" speed="290" manacost="0">
-	<health now="56000" max="56000"/>
+	<health now="28000" max="28000"/>
 	<look type="334" corpse="11107"/>
 	<targetchange interval="2000" chance="10"/>
 	<strategy attack="100" defense="0"/>
@@ -53,7 +53,6 @@
 		<voice sentence="Oh, HE will take revenge on zzizz azzault when you zztep in front of HIZZ fazze!"/>
 	</voices>
 	<loot>
-		<item id="12700" chance="100000" countmax="2"/><!-- boss point -->
 		<item id="7591" chance="30500" /><!-- great health potion -->
 		<item id="2152" countmax="30" chance="41325" /><!-- platinum coin -->
 		<item id="2148" countmax="100" chance="49650" /><!-- gold coin -->

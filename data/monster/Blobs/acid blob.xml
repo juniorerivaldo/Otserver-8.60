@@ -19,30 +19,27 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="30" attack="40"/>
-		<attack name="earth" interval="3000" chance="25" radius="4" min="-10" max="-20">
+		<attack name="earth" interval="3000" chance="25" radius="4" min="-10" max="-22">
 			<attribute key="areaEffect" value="greenspark"/>
 		</attack>
-		<attack name="earth" interval="3000" chance="8" length="5" spread="0" min="-40" max="-60">
+		<attack name="earth" interval="3000" chance="8" length="5" spread="0" min="-49" max="-54">
 			<attribute key="areaEffect" value="poison"/>
 		</attack>
 	</attacks>
-	<defenses armor="15" defense="15"/>
+	<defenses armor="10" defense="10"/>
 	<immunities>
 		<immunity death="1"/>
 		<immunity earth="1"/>
 	</immunities>
 	<elements>
-		<element firePercent="-10"/>
-		<element icePercent="20"/>
+		<element firePercent="-5"/>
+		<element icePercent="8"/>
 		<element energyPercent="-10"/>
-		<element physicalPercent="10"/>
 	</elements>
-	<summons maxSummons="3">
+	<summons maxSummons="2">
 		<summon name="Acid Blob" interval="4000" chance="8"/>
 	</summons>
-	<voices interval="5000" chance="10">
-		<voice sentence="Kzzchhhh"/>
-	</voices>
+	<voices interval="5000" chance="10"/>
 	<loot>
 		<item id="9967" chance="20000"/><!-- glob of acid -->
 	</loot>

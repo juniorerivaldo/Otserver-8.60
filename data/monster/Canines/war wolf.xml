@@ -20,21 +20,21 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="40" attack="20"/>
 	</attacks>
-	<defenses armor="8" defense="8"/>
+	<defenses armor="10" defense="16"/>
 	<elements>
 		<element earthPercent="20"/>
 		<element holyPercent="10"/>
 		<element icePercent="-10"/>
-		<element deathPercent="-10"/>
+		<element deathPercent="-5"/>
 	</elements>
 	<voices interval="5000" chance="10">
 		<voice sentence="Grrrrrrr"/>
 		<voice sentence="Yoooohhuuuu!" yell="1"/>
 	</voices>
 	<loot>
+		<item id="2666" countmax="4" chance="25000"/><!-- meat -->
 		<item id="2671" countmax="2" chance="20000"/><!-- ham -->
-		<item id="5897" chance="1000"/><!-- wolf paw -->
-		<item id="1884" chance="99"/><!-- wolf trophy -->
-		<item id="11235" chance="4000"/><!-- warwolf fur -->
+		<item id="5897" chance="2000"/><!-- wolf paw -->
+		<item id="3976" chance="250"/><!-- wolf trophy -->
 	</loot>
 </monster>

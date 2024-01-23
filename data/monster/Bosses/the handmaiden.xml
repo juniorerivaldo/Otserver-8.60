@@ -50,22 +50,6 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
-		<item id="2521" chance="17900" /><!-- dark shield -->
-		<item id="2152" countmax="5" chance="10925" /><!-- platinum coin -->
-		<item id="2225" chance="74400" /><!-- piece of iron -->
-		<item id="2656" chance="9200" /><!-- blue robe -->
-		<item id="2645" chance="26600" /><!-- steel boots -->
-		<item id="2176" chance="9200" /><!-- orb -->
-		<item id="2165" chance="13550" /><!-- stealth ring -->
-		<item id="6539" chance="100000" /><!-- the handmaiden's protector -->
-		<item id="5944" chance="91800" /><!-- soul orb -->
-		<item id="2146" countmax="3" chance="6300" /><!-- small sapphire -->
-		<item id="2166" chance="17900" /><!-- power ring -->
-		<item id="2231" chance="61375" /><!-- big bone -->
-		<item id="6500" chance="100000" /><!-- demonic essence -->
-		<item id="2148" countmax="100" chance="46200" /><!-- gold coin -->
-		<item id="2148" countmax="43" chance="46200" /><!-- gold coin -->
-		<item id="2167" chance="9200" /><!-- energy ring -->
+		<item id="6539" chance="35000"/><!-- handmaiden's protector -->
 	</loot>
 </monster>

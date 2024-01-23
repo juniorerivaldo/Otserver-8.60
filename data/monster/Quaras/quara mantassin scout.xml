@@ -15,7 +15,7 @@
 		<flag canpushcreatures="0"/>
 		<flag staticattack="90"/>
 		<flag targetdistance="1"/>
-		<flag runonhealth="40"/>
+		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="45" attack="110"/>
@@ -36,12 +36,12 @@
 	</voices>
 	<loot>
     <item id="2148" countmax="30" chance="50000" /><!-- gold coin -->
-	<item id="12445" chance="1315" /><!-- mantassin tail -->
-	<item id="2464" chance="4761" /><!-- chain armor -->
-	<item id="2229" chance="892" /><!-- skull -->
-    <item id="2146" chance="186" /><!-- small sapphire -->
+    <item id="2464" chance="4761" /><!-- chain armor -->
+    <item id="12445" chance="1315" /><!-- mantassin tail -->
+    <item id="2229" chance="892" /><!-- skull -->
     <item id="2377" chance="763" /><!-- two handed sword -->
-    <item id="2165" chance="304" /><!-- stealth ring -->
     <item id="5895" chance="321" /><!-- fish fin -->
+    <item id="2165" chance="304" /><!-- stealth ring -->
+	<item id="2146" chance="186" /><!-- small sapphire -->
 </loot>
 </monster>

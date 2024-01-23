@@ -14,31 +14,28 @@
 		<flag targetdistance="1"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-175" />
-		<attack name="drown" interval="1000" chance="100" length="5" spread="6" min="0" max="-60">
+		<attack name="melee" interval="2000" skill="50" attack="60"/>
+		<attack name="drown" interval="1000" chance="100" length="5" spread="6" min="-10" max="-50">
 			<attribute key="areaEffect" value="energyarea"/>
 		</attack>
-		<attack name="speed" interval="4000" chance="100" radius="3" duration="5000" speedchange="-400">
+		<attack name="speed" interval="4000" chance="100" radius="3" duration="10000" speedchange="-400">
 			<attribute key="areaEffect" value="poff"/>
 		</attack>
-		<attack name="physical" interval="6000" chance="100" radius="1" target="1" range="5" min="0" max="-45">
+		<attack name="physical" interval="6000" chance="100" radius="1" target="1" range="5" min="0" max="-40">
 			<attribute key="shootEffect" value="largerock"/>
 		</attack>
 	</attacks>
-	<defenses armor="27" defense="27"/>
+	<defenses armor="26" defense="27"/>
 	<elements>
 		<element firePercent="30"/>
 		<element energyPercent="-10"/>
 	</elements>
 	<immunities>
-		<immunity ice="1"/>
-		<immunity earth="1"/>
 		<immunity outfit="1"/>
 		<immunity drunk="1"/>
 		<immunity invisible="1"/>
 	</immunities>
 	<voices interval="5000" chance="5">
-		<voice sentence="Puny warmblood."/>
 		<voice sentence="You will pay for imprisoning me here."/>
 	</voices>
 </monster>

@@ -16,18 +16,19 @@
 		<flag lightlevel="0"/>
 		<flag lightcolor="0"/>
 		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="20" attack="40"/>
 	</attacks>
-	<defenses armor="8" defense="8"/>
+	<defenses armor="30" defense="30"/>
 	<elements>
 		<element icePercent="50"/>
 		<element holyPercent="10"/>
 		<element energyPercent="20"/>
-		<element physicalPercent="10"/>
+		<element physicalPercent="5"/>
 		<element earthPercent="-10"/>
-		<element deathPercent="-5"/>
+		<element deathPercent="-7"/>
 	</elements>
 	<immunities>
 		<immunity drunk="1"/>

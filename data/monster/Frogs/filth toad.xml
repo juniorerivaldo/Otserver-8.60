@@ -26,16 +26,11 @@
 			<attribute key="areaEffect" value="greenbubble"/>
 		</attack>
 	</attacks>
-	<defenses armor="6" defense="6"/>
-	<elements>
-		<element earthpercent="20"/>
-		<element icePercent="20"/>
-		<element firePercent="-10"/>
-	</elements>
+	<defenses armor="12" defense="10"/>
 	<loot>
 		<item id="2148" countmax="21" chance="100000"/><!-- gold coin -->
 		<item id="2667" countmax="2" chance="20000"/><!-- fish -->
-		<item id="2398" chance="2777"/><!-- mace -->
 		<item id="10557" chance="3571"/><!-- poisonous slime -->
+		<item id="2398" chance="2777"/><!-- mace -->
 	</loot>
 </monster>

@@ -53,41 +53,21 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<loot>
-		<item id="2148" countmax="100" chance="52200" /><!-- gold coin -->
-		<item id="2148" countmax="91" chance="52200" /><!-- gold coin -->
-		<item id="6500" countmax="3" chance="100500" /><!-- demonic essence -->
-		<item id="2789" countmax="30" chance="55500" /><!-- brown mushroom -->
-		<item id="5880" countmax="2" chance="48250" /><!-- iron ore -->
-		<item id="7417" chance="11925" /><!-- runed sword -->
-		<item id="2498" chance="20925" /><!-- royal helmet -->
-		<item id="2178" chance="20925" /><!-- mind stone -->
-		<item id="2392" chance="18850" /><!-- fire sword -->
-		<item id="8473" chance="21800" /><!-- ultimate health potion -->
-		<item id="9808" chance="18150" /><!-- rusty armor -->
-		<item id="5741" chance="16075" /><!-- skull helmet -->
-		<item id="5954" countmax="2" chance="7250" /><!-- demon horn -->
-		<item id="7402" chance="10525" /><!-- dragon slayer -->
-		<item id="7591" chance="25250" /><!-- great health potion -->
-		<item id="2152" countmax="30" chance="9725" /><!-- platinum coin -->
-		<item id="2475" chance="21250" /><!-- warrior helmet -->
-		<item id="5669" chance="20225" /><!-- mysterious voodoo skull -->
-		<item id="9971" chance="20575" /><!-- gold ingot -->
-		<item id="2479" chance="9850" /><!-- strange helmet -->
-		<item id="7590" chance="24200" /><!-- great mana potion -->
-		<item id="7385" chance="9850" /><!-- crimson sword -->
-		<item id="2176" chance="21600" /><!-- orb -->
-		<item id="2383" chance="14350" /><!-- spike sword -->
-		<item id="8472" chance="28350" /><!-- great spirit potion -->
-		<item id="5891" chance="4650" /><!-- enchanted chicken wing -->
-		<item id="2491" chance="11575" /><!-- crown helmet -->
-		<item id="5925" countmax="20" chance="12050" /><!-- hardened bone -->
-		<item id="6103" chance="4300" /><!-- unholy book -->
-		<item id="5884" chance="8100" /><!-- spirit container -->
-		<item id="7391" chance="16750" /><!-- thaian sword -->
-		<item id="2419" chance="9850" /><!-- scimitar -->
-		<item id="2177" chance="19525" /><!-- life crystal -->
-		<item id="5892" chance="12600" /><!-- huge chunk of crude iron -->
-		<item id="2393" chance="11925" /><!-- giant sword -->
-		<item id="5885" chance="6375" /><!-- flask of warrior's sweat -->
+		<item id="6300" chance="7777"/><!-- death ring -->
+		<item id="2195" chance="4444"/><!-- boots of haste -->
+		<item id="2393" chance="3000"/><!-- giant sword -->
+		<item id="2432" chance="5555"/><!-- fire axe -->
+		<item id="2402" chance="10000"/><!-- silver dagger -->
+		<item id="2477" chance="6666"/><!-- knight legs -->
+		<item id="2164" chance="7300"/><!-- might ring -->
+		<item id="2150" countmax="17" chance="6000"/><!-- small amethyst -->
+		<item id="2462" chance="9700"/><!-- devil helmet -->
+		<item id="7591" chance="17000"/><!-- great health potion -->
+		<item id="7591" chance="9000"/><!-- great health potion -->
+		<item id="2149" countmax="6" chance="4388"/><!-- small emerald -->
+		<item id="2396" chance="6666"/><!-- ice rapier -->
+		<item id="2158" chance="4444"/><!-- blue gem -->
+		<item id="2470" chance="6500"/><!-- golden legs -->
+		<item id="2520" chance="9999"/><!-- demon shield -->
 	</loot>
 </monster>

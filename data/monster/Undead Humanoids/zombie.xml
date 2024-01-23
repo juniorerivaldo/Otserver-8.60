@@ -19,17 +19,11 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="42" attack="50"/>
-		<attack name="manadrain" interval="1000" chance="13" range="1" min="-14" max="-23"/>
-		<attack name="lifedrain" interval="2000" range="5" min="-15" max="-24" target="1">
-			<attribute key="areaEffect" value="redshimmer"/>
-		</attack>
-		<attack name="death" interval="2000" min="-30" max="-49" target="1">
-			<attribute key="areaEffect" value="redshimmer"/>
-		</attack>
+		<attack name="manadrain" interval="1000" chance="13" range="1" min="-0" max="-45"/>
 	</attacks>
-	<defenses armor="15" defense="15"/>
+	<defenses armor="15" defense="10"/>
 	<elements>
-		<element firePercent="-50"/>
+		<element firePercent="-40"/>
 	</elements>
 	<immunities>
 		<immunity death="1"/>
@@ -46,16 +40,17 @@
 		<voice sentence="Httt.... hmnnsss..."/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="65" chance="24000"/><!-- gold coin -->
-		<item id="10576" chance="10000"/><!-- half-eaten brain -->
+		<item id="2148" countmax="64" chance="24000"/><!-- gold coin -->
+		<item id="2227" chance="45000"/><!-- rotten meat -->
+		<item id="2050" chance="46250"/><!-- torch -->
 		<item id="2460" chance="8700"/><!-- brass helmet -->
-		<item id="2398" chance="7250"/><!-- mace -->
-		<item id="2417" chance="2900"/><!-- battle hammer -->
-		<item id="9808" chance="7250"/><!-- rusty armor -->
 		<item id="2457" chance="8700"/><!-- steel helmet -->
+		<item id="2398" chance="7250"/><!-- mace -->
+		<item id="9808" chance="7250"/><!-- rusty armor -->
+		<item id="2381" chance="2900"/><!-- battle hammer -->
 		<item id="2381" chance="4350"/><!-- halberd -->
 		<item id="2205" chance="2900"/><!-- life ring -->
 		<item id="7620" chance="1450"/><!-- mana potion -->
-		<item id="2657" chance="500"/><!-- simple dress -->
+		<item id="2657" chance="900"/><!-- simple dress -->
 	</loot>
 </monster>

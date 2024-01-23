@@ -20,9 +20,9 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="20" attack="40"/>
 	</attacks>
-	<defenses armor="8" defense="8"/>
+	<defenses armor="10" defense="13"/>
 	<elements>
-		<element physicalPercent="-5"/>
+		<element physicalPercent="-12"/>
 		<element deathPercent="-5"/>
 	</elements>
 	<voices interval="5000" chance="10">
@@ -32,14 +32,14 @@
 	<loot>
 		<item id="2148" countmax="10" chance="43000"/><!-- gold coin -->
 		<item id="2050" chance="50000"/><!-- torch -->
+		<item id="2666" countmax="2" chance="22500"/><!-- meat -->
 		<item id="2649" chance="17650"/><!-- leather legs -->
+		<item id="2403" chance="10000"/><!-- knife -->
 		<item id="2671" countmax="2" chance="6000"/><!-- ham -->
 		<item id="2406" chance="8000"/><!-- short sword -->
 		<item id="2461" chance="7850"/><!-- leather helmet -->
-		<item id="2403" chance="10000"/><!-- knife -->
-		<item id="2376" chance="5650"/><!-- sword -->
-		<item id="8840" countmax="5" chance="22500"/><!-- raspberry -->
 		<item id="2404" chance="4400"/><!-- combat knife -->
-		<item id="7397" chance="100"/><!-- deer trophy -->
+		<item id="2376" chance="5650"/><!-- sword -->
+		<item id="7397" chance="500"/><!-- deer trophy -->
 	</loot>
 </monster>

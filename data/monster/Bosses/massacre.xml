@@ -39,18 +39,6 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
-		<item id="2221" chance="46450" /><!-- old twig -->
-		<item id="2176" chance="8600" /><!-- orb -->
-		<item id="2231" chance="8600" /><!-- big bone -->
-		<item id="6540" chance="100000" /><!-- piece of massacre's shell -->
-		<item id="2666" chance="92400" /><!-- meat -->
-		<item id="5022" countmax="7" chance="41425" /><!-- orichalcum pearl -->
-		<item id="2152" countmax="6" chance="31575" /><!-- platinum coin -->
-		<item id="5944" chance="89700" /><!-- soul orb -->
-		<item id="6500" chance="100000" /><!-- demonic essence -->
-		<item id="2148" countmax="100" chance="63950" /><!-- gold coin -->
-		<item id="2148" countmax="22" chance="63950" /><!-- gold coin -->
-		<item id="7590" chance="15900" /><!-- great mana potion -->
+		<item id="6540" chance="100000"/><!-- massacre's shell piece -->
 	</loot>
 </monster>

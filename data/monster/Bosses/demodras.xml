@@ -51,7 +51,6 @@
 		<voice sentence="I WILL PROTECT MY BROOD!" yell="1"/>
 	</voices>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
 		<item id="2672" countmax="2" chance="20000"/><!-- dragon ham -->
 		<item id="2033" chance="1818"/><!-- golden mug -->
@@ -70,6 +69,6 @@
 		<item id="2528" chance="1333"/><!-- tower shield -->
 		<item id="5948" countmax="1" chance="5000"/><!-- red dragon leather -->
 		<item id="5882" countmax="1" chance="5000"/><!-- red dragon scale -->
-		<item id="10020" chance="100000"/><!-- dragon claw -->
+		<item id="5919" chance="100000"/><!-- dragon claw -->
 	</loot>
 </monster>

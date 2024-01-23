@@ -49,7 +49,6 @@
 		<voice sentence="Praise to my master Urgith!"/>
 	</voices>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2148" countmax="40" chance="100000"/><!-- gold coin -->
 		<item id="2032" chance="10000"/><!-- bowl -->
 		<item id="3969" chance="150"/><!-- horseman helmet -->

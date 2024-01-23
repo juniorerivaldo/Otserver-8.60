@@ -32,7 +32,6 @@
 		</attack>
 	</attacks>
 	<defenses armor="30" defense="31">
-		<defense name="ultimate healing" interval="1200" chance="35" min="600" max="800"/>
 	</defenses>
 	<elements>
 		<element earthPercent="100"/>
@@ -41,7 +40,6 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2148" countmax="10" chance="100000"/><!-- gold coin -->
 		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
 		<item id="2666" countmax="50" chance="33333"/><!-- meat -->

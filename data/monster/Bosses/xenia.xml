@@ -46,7 +46,6 @@
 		<item id="2674" countmax="4" chance="10000"/><!-- red apple -->
 		<item id="2420" chance="10000"/><!-- machete -->
 		<item id="2666" countmax="3" chance="20000"/><!-- meat -->
-		<item id="2229" chance="15000"/> <!-- skull -->
 		<item id="2147" countmax="2" chance="2500"/><!-- small ruby -->
 		<item id="2145" countmax="2" chance="2500"/><!-- small diamond -->
 		<item id="2200" chance="1000"/><!-- protection amulet -->

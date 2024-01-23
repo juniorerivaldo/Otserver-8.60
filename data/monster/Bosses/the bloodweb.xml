@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="The Bloodweb" nameDescription="the bloodweb" race="undead" experience="900" speed="340" manacost="0">
-	<health now="2250" max="2250"/>
+	<health now="1250" max="1250"/>
 	<look type="263" corpse="7344"/>
 	<targetchange speed="20000" chance="8"/>
 	<strategy attack="100" defense="0"/>
@@ -49,7 +49,6 @@
 		<voice sentence="Screeech!"/>
 	</voices>
 	<loot>
-		<item id="12700" chance="100000" countmax="2"/><!-- boss point -->
 		<item id="2463" chance="100000"/><!-- ice cube -->
 		<item id="7364" countmax="9" chance="100000"/><!-- platinum coin -->
 		<item id="7589" chance="100000"/><!-- strong mana potion -->

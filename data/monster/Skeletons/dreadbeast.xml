@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Dreadbeast" species="undead" nameDescription="a dreadbeast" race="undead" experience="250" speed="200" manacost="800">
-	<health now="800" max="800"/>
-	<look type="101" corpse="6030"/>
+<monster name="Dreadbeast" species="undead" nameDescription="a dreadbeast" race="undead" experience="580" speed="200" manacost="800">
+	<health now="515" max="515"/>
+	<look type="101" head="20" body="30" legs="40" feet="50" corpse="3031"/>
 	<targetchange interval="60000" chance="10"/>
 	<strategy attack="100" defense="0"/>
 	<flags>
@@ -20,45 +20,22 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" min="-0" max="-100"/>
-		<attack name="lifedrain" interval="2000" chance="20" radius="1" target ="1" min="-70" max="-90">
+		<attack name="lifedrain" interval="2000" chance="20" radius="1" target ="1" min="-150" max="-250">
 			<attribute key="areaEffect" value="yellowenergy"/>
 			<attribute key="shootEffect" value="suddendeath"/>
 		</attack>
-		<attack name="lifedrain" interval="2000" chance="20" radius="1" target ="1" min="0" max="-80">
+		<attack name="lifedrain" interval="2000" chance="20" radius="1" target ="1" min="-150" max="-250">
 			<attribute key="areaEffect" value="purpleenergy"/>
 			<attribute key="shootEffect" value="suddendeath"/>
 		</attack>
-		<attack name="drown" interval="1000" chance="11" radius="4" target ="1" min ="-70" max="-90">
-			<attribute key="areaEffect" value="mortarea"/>
-		</attack>
 	</attacks>
-	<defenses armor="36" defense="36">
-		<defense name="healing" interval="3000" chance="15" min="35" max="65">
-			<attribute key="areaEffect" value="blueshimmer"/>
-		</defense>
-	</defenses>
+	<defenses armor="34" defense="36"/>
 	<elements>
-		<element energyPercent="15"/>
-		<element icePercent="40"/>
-		<element firePercent="55"/>
-		<element holyPercent="-50"/>
-		<element physicalPercent="-30"/>
+		<element firePercent="70"/>
+		<element physicalPercent="-25"/>
 	</elements>
 	<immunities>
 		<immunity poison="1"/>
-		<immunity death="1"/>
 		<immunity paralyze="1"/>
 	</immunities>
-	<loot>
-		<item id="2148" countmax="88" chance="12250" /><!-- gold coin -->
-		<item id="2230" chance="9280" /><!-- bone -->
-		<item id="2463" chance="3410" /><!-- plate armor -->
-		<item id="2229" chance="3030" /><!-- skull -->
-		<item id="2449" chance="2030" /><!-- bone club -->
-		<item id="2231" chance="1860" /><!-- big bone -->
-		<item id="2541" chance="1430" /><!-- bone shield -->
-		<item id="2796" chance="1250" /><!-- green mushroom -->
-		<item id="7618" chance="800" /><!-- health potion -->
-		<item id="5925" chance="600" />	<!-- hardened bone -->
-	</loot>
 </monster>

@@ -34,19 +34,12 @@
 		<immunity paralyze="1"/>
 		<immunity ice="1"/>
 	</immunities>
-	<voices interval="5000" chance="10">
-		<voice sentence="Tssss!"/>
-		<voice sentence="Gaaahhh!"/>
-		<voice sentence="Gluh! Gluh!"/>
-		<voice sentence="Boohaa!"/>
-	</voices>
 	<loot>
-    <item id="2148" countmax="50" chance="50000" /><!-- gold coin -->
+    <item id="2148" countmax="40" chance="50000" /><!-- gold coin -->
 	<item id="12443" chance="6666" /><!-- quara tentacle -->
-	<item id="2670" chance="10000" /><!-- shrimp -->
-	<item id="2397" chance="5555" /><!-- longsword -->
-    <item id="2465" chance="5000" /><!-- brass armor -->
-	<item id="2150" chance="591" /><!-- small amethyst -->
-	<item id="5895" chance="295" /><!-- fish fin -->
+    <item id="2397" chance="5555" /><!-- longsword -->
+    <item id="2465" chance="1923" /><!-- brass armor -->
+    <item id="2150" chance="591" /><!-- small amethyst -->
+    <item id="5895" chance="295" /><!-- fish fin -->
 </loot>
 </monster>

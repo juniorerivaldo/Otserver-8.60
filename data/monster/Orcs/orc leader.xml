@@ -19,41 +19,35 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="40" attack="74"/>
-		<attack name="physical" interval="1000" chance="17" range="7" min="0" max="-70">
+		<attack name="physical" interval="1000" chance="17" range="7" min="-50" max="-70">
 			<attribute key="shootEffect" value="throwingknife"/>
 		</attack>
 	</attacks>
-	<defenses armor="20" defense="20"/>
+	<defenses armor="20" defense="30"/>
 	<elements>
+		<element firePercent="100"/>
 		<element energyPercent="20"/>
-		<element holyPercent="20"/>
+		<element holyPercent="10"/>
 		<element earthPercent="-10"/>
 		<element deathPercent="-5"/>
 	</elements>
-	<immunities>
-		<immunity fire="1"/>
-	</immunities>
 	<voices interval="5000" chance="10">
 		<voice sentence="Ulderek futgyr human!"/>
 	</voices>
 	<loot>
 		<item id="2148" countmax="35" chance="17000"/><!-- gold coin -->
 		<item id="2667" chance="29000"/><!-- fish -->
-		<item id="12435" chance="18000"/><!-- orc leather -->
-		<item id="2510" chance="10000"/><!-- plate shield -->
+		<item id="2379" chance="26500"/><!-- dagger -->
 		<item id="2410" countmax="4" chance="6250"/><!-- throwing knife -->
-		<item id="2789" chance="9000"/><!-- brown mushroom -->
-		<item id="2207" chance="750"/><!-- sword ring -->
-		<item id="2397" chance="2000"/><!-- longsword -->
-		<item id="7378" chance="2000"/><!-- royal spear -->
-		<item id="2478" chance="2500"/><!-- brass legs -->
+		<item id="2666" countmax="2" chance="12500"/><!-- meat -->
 		<item id="2419" chance="6700"/><!-- scimitar -->
-		<item id="12436" chance="2000"/><!-- skull belt -->
+		<item id="2478" chance="2500"/><!-- brass legs -->
 		<item id="2463" chance="1250"/><!-- plate armor -->
-		<item id="11113" chance="1000"/><!-- orc tooth -->
-		<item id="2413" chance="700"/><!-- broadsword -->
-		<item id="7618" chance="400"/><!-- health potion -->
+		<item id="7378" chance="1000"/><!-- royal spear -->
+		<item id="2207" chance="750"/><!-- sword ring -->
 		<item id="2647" chance="800"/><!-- plate legs -->
-		<item id="2475" chance="100"/><!-- warrior helmet -->
+		<item id="2413" chance="750"/><!-- broadsword -->
+		<item id="7618" chance="400"/><!-- health potion -->
+		<item id="2475" chance="200"/><!-- warrior helmet -->
 	</loot>
 </monster>

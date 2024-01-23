@@ -20,7 +20,7 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="35" attack="40"/>
 	</attacks>
-	<defenses armor="13" defense="13"/>
+	<defenses armor="13" defense="21"/>
 	<elements>
 		<element energyPercent="20"/>
 		<element icePercent="20"/>
@@ -36,11 +36,9 @@
 	<loot>
 		<item id="2148" countmax="30" chance="22500"/><!-- gold coin -->
 		<item id="3976" countmax="3" chance="15000"/><!-- worm -->
-		<item id="2666" countmax="3" chance="11000"/><!-- meat -->
-		<item id="7618" chance="100"/><!-- health potion -->
-		<item id="3970" chance="100"/><!-- feather headdress -->
-		<item id="7732" chance="100"/><!-- seeds -->
-		<item id="12470" chance="300"/><!-- colourful feather -->
-		<item id="11190" chance="1000"/><!-- terrorbird beak -->
+		<item id="2148" countmax="3" chance="11000"/><!-- meat -->
+		<item id="3970" chance="2000"/><!-- health potion -->
+		<item id="3970" chance="750"/><!-- feather headdress -->
+		<item id="3970" chance="2500"/><!-- seeds -->
 	</loot>
 </monster>

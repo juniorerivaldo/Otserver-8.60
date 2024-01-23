@@ -47,11 +47,10 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2148" chance="50000" countmax="60"/><!-- gold coin -->
 		<item id="2148" chance="50000" countmax="40"/><!-- gold coin -->
-		<item id="2152" chance="55000" countmax="25"/><!-- platinum coin -->
+		<item id="2152" chance="5000" countmax="3"/><!-- platinum coin -->
 		<item id="8306" chance="100000"/><!-- pure energy -->
-		<item id="8879" chance="27500"/><!-- voltage armor -->
+		<item id="8879" chance="1000"/><!-- voltage armor -->
 	</loot>
 </monster>

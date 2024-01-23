@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<monster name="Mammoth" nameDescription="a mammoth" race="blood" experience="160" speed="220" manacost="0">
-	<health now="320" max="320"/>
+<monster name="Mammoth" nameDescription="a mammoth" race="blood" experience="110" speed="220" manacost="0">
+	<health now="190" max="190"/>
 	<look type="199" corpse="6074"/>
 	<targetchange interval="5000" chance="8"/>
 	<strategy attack="100" defense="0"/>
@@ -20,7 +20,7 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="45" attack="40"/>
 	</attacks>
-	<defenses armor="20" defense="20"/>
+	<defenses armor="40" defense="57"/>
 	<elements>
 		<element earthPercent="20"/>
 		<element icePercent="20"/>
@@ -33,13 +33,11 @@
 		<voice sentence="Tooooot."/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="40" chance="16000"/><!-- gold -->
-		<item id="2671" countmax="3" chance="15000"/><!-- ham -->
-		<item id="2666" countmax="4" chance="15000"/><!-- meat -->		
-		<item id="11224" chance="7000"/><!-- thick fur -->
-		<item id="11238" countmax="2" chance="1000"/><!-- mammoth tusk -->
-		<item id="7381" chance="2000"/><!-- mammoth whopper -->
+		<item id="2148" countmax="20" chance="16000"/><!-- gold -->
+		<item id="2671" countmax="3" chance="30000"/><!-- ham -->
+		<item id="2666" countmax="4" chance="15000"/><!-- meat -->
+		<item id="3956" countmax="2" chance="750"/><!-- elephant tusk -->
 		<item id="7432" chance="550"/><!-- furry club -->
-		<item id="3973" chance="500"/><!-- tusk shield -->	
+		<item id="3973" chance="200"/><!-- tusk shield -->
 	</loot>
 </monster>

@@ -20,17 +20,15 @@
 	<attacks>
 		<attack name="melee" interval="1500" skill="30" attack="10" poison="2"/>
 	</attacks>
-	<defenses armor="4" defense="4"/>
+	<defenses armor="4" defense="8"/>
 	<elements>
+		<element earthPercent="100"/>
 		<element firePercent="-10"/>
 	</elements>
-	<immunities>
-		<immunity earth="1"/>
-	</immunities>
 	<voices interval="5000" chance="100">
 		<voice sentence="Bssssss"/>
 	</voices>
 	<loot>
-		<item id="5902" chance="5540"/> <!-- honeycomb -->
+		<item id="5902" chance="2854"/> <!-- honeycomb -->
 	</loot>
 </monster>

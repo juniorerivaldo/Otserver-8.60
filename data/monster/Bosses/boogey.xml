@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Boogey" nameDescription="a boogey" race="undead" experience="475" speed="400" manacost="0">
 	<health now="930" max="930"/>
-	<look type="300" corpse="8955"/>
+	<look type="300" corpse="10324"/>
 	<targetchange interval="5000" chance="10"/>
 	<strategy attack="100" defense="0"/>
 	<flags>

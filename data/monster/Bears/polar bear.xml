@@ -20,14 +20,15 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="10" attack="30"/>
 	</attacks>
-	<defenses armor="7" defense="7"/>
+	<defenses armor="7" defense="10"/>
 	<elements>
 		<element icePercent="20"/>
-		<element firePercent="10"/>
+		<element firePercent="7"/>
 		<element deathPercent="-10"/>
-		<element energyPercent="-10"/>
+		<element energyPercent="-3"/>
 	</elements>
 	<voices interval="5000" chance="10">
+		<voice sentence="Grrrrrr"/>
 		<voice sentence="GROARRR!" yell="1"/>
 	</voices>
 	<loot>

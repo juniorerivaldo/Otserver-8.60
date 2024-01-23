@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Spirit of Water" nameDescription="the spirit of water" race="undead" experience="850" speed="200" manacost="0">
-	<health now="1400" max="1400"/>
+	<health now="1517" max="1517"/>
 	<look type="11" corpse="7349"/>
 	<strategy attack="100" defense="0"/>
 	<flags>
@@ -14,29 +14,20 @@
 		<flag targetdistance="1"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-200"/>
+		<attack name="melee" interval="2000" skill="70" attack="100"/>
 		<attack name="poisonfield" interval="1000" chance="50">
 			<attribute key="shootEffect" value="poison"/>
 		</attack>
 		<attack name="physical" spread="3" chance="40" interval="2000" min="-1" max="-120">
 			<attribute key="areaEffect" value="bluebubble"/>
 		</attack>
-		<attack name="physical" interval="1000" chance="25" range="7" min="0" max="-174">
-			<attribute key="shootEffect" value="snowball"/>
-			<attribute key="areaEffect" value="energy"/>
-		</attack>
 	</attacks>
-	<defenses armor="50" defense="50">
-		<defense name="healing" interval="10000" chance="15" min="10" max="120">
-			<attribute key="areaEffect" value="blueshimmer"/>
-		</defense>
-	</defenses>
+	<defenses armor="0" defense="0"/>
 	<elements>
+		<element firePercent="100"/>
 		<element energyPercent="-10"/>
 	</elements>
 	<immunities>
-		<immunity fire="1"/>
-		<immunity ice="1"/>
 		<immunity outfit="1"/>
 		<immunity drunk="1"/>
 		<immunity invisible="1"/>

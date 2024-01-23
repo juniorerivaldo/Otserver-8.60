@@ -20,17 +20,14 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="10" attack="20"/>
 	</attacks>
-	<defenses armor="2" defense="2"/>
+	<defenses armor="2" defense="6"/>
 	<elements>
 		<element icePercent="20"/>
 		<element firePercent="10"/>
 		<element holyPercent="10"/>
 		<element energyPercent="-5"/>
-		<element deathPercent="-10"/>
+		<element deathPercent="-5"/>
 	</elements>
-	<voices interval="5000" chance="10">
-		<voice sentence="Yoooohhuuuu!"/>
-	</voices>
 	<loot>
 		<item id="2666" countmax="2" chance="15000"/><!-- meat -->
 		<item id="11212" chance="9425"/> <!-- winter wolf fur -->

@@ -22,7 +22,7 @@
 		<attack name="drunk" interval="1000" chance="20" range="7">
 			<attribute key="shootEffect" value="energy"/>
 		</attack>
-		<attack name="fire" interval="1000" chance="34" range="7" radius="3" target="1" min="0" max="-35">
+		<attack name="fire" interval="1000" chance="34" range="7" radius="3" target="1" min="-20" max="-20">
 			<attribute key="shootEffect" value="fire"/>
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
@@ -30,8 +30,10 @@
 			<attribute key="areaEffect" value="bluebubble"/>
 		</attack>
 	</attacks>
-	<defenses armor="20" defense="20"/>
+	<defenses armor="20" defense="25"/>
 	<immunities>
+		<immunity energy="1"/>
+		<immunity fire="1"/>
 		<immunity drunk="1"/>
 		<immunity invisible="1"/>
 	</immunities>
@@ -53,12 +55,12 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="10" chance="12500"/><!-- gold coin -->
-		<item id="2484" chance="7000"/><!-- studded armor -->
 		<item id="2526" chance="1200"/><!-- studded shield -->
-		<item id="2386" chance="12250"/><!-- axe -->
-		<item id="6570" chance="500"/><!-- blue surprise bag -->
-		<item id="6571" chance="100"/><!-- red surprise bag -->
 		<item id="2482" chance="9500"/><!-- studded helmet -->
+		<item id="2484" chance="7000"/><!-- studded armor -->
+		<item id="2386" chance="12250"/><!-- axe -->
 		<item id="2385" chance="10250"/><!-- sabre -->
+		<item id="6570" chance="500"/><!-- blue surprise bag -->
+		<item id="6571" chance="500"/><!-- red surprise bag -->
 	</loot>
 </monster>

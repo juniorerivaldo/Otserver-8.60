@@ -20,7 +20,7 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="30" attack="190"/>
 	</attacks>
-	<defenses armor="25" defense="25"/>
+	<defenses armor="20" defense="29"/>
 	<elements>
 		<element energyPercent="-10"/>
 	</elements>
@@ -32,20 +32,14 @@
 	</immunities>
 	<voices interval="5000" chance="10">
 		<voice sentence="Gnarrr!"/>
-		<voice sentence="Tcharrr!"/>
-		<voice sentence="Rrrah!"/>
-		<voice sentence="Rraaar!"/>
 	</voices>
 	<loot>
     <item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
-	<item id="2148" countmax="32" chance="50000" /><!-- gold coin -->
+	<item id="2148" countmax="11" chance="50000" /><!-- gold coin -->
 	<item id="12447" chance="3846" /><!-- quara bone -->
-	<item id="2483" chance="1020" /><!-- scale armor -->
-	<item id="2387" chance="1075" /><!-- double axe -->
-	<item id="2670" chance="5000" /><!-- shrimp -->
-    <item id="2377" chance="3000" /><!-- two handed sword -->
+    <item id="2387" chance="1075" /><!-- double axe -->
+    <item id="2483" chance="1020" /><!-- scale armor -->
+    <item id="2145" chance="925" /><!-- small diamond -->
     <item id="5895" chance="719" /><!-- fish fin -->
-    <item id="2145" countmax="2" chance="925" /><!-- small diamond -->
-    <item id="8911" chance="500" /><!-- northwind rod -->
 </loot>
 </monster>

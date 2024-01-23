@@ -8,7 +8,7 @@
 		<flag summonable="0"/>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
-		<flag illusionable="0"/>
+		<flag illusionable="1"/>
 		<flag convinceable="0"/>
 		<flag pushable="0"/>
 		<flag canpushitems="1"/>
@@ -19,14 +19,14 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="92" attack="100" poison="1200"/>
-		<attack name="poisoncondition" interval="2000" chance="8" target="1" range="7" min="-50" max="-500">
+		<attack name="poisoncondition" interval="2000" chance="8" target="1" range="7" min="-920" max="-1280">
 			<attribute key="shootEffect" value="poison"/>
 			<attribute key="areaEffect" value="poison"/>
 		</attack>
-		<attack name="lifedrain" interval="2000" chance="15" range="7" target="1" min="-80" max="-228">
+		<attack name="lifedrain" interval="2000" chance="15" range="7" target="1" min="-80" max="-230">
 			<attribute key="areaEffect" value="redshimmer"/>
 		</attack>
-		<attack name="physical" interval="2000" chance="9" range="7" target="1" min="-40" max="-500">
+		<attack name="physical" interval="2000" chance="9" range="7" target="1" min="-2" max="-1377">
 			<attribute key="shootEffect" value="suddendeath"/>
 			<attribute key="areaEffect" value="mortarea"/>
 		</attack>
@@ -34,11 +34,8 @@
 			<attribute key="shootEffect" value="suddendeath"/>
 			<attribute key="areaEffect" value="mortarea"/>
 		</attack>
-		<attack name="paralyze" interval="3000" chance="10" target="1">
-			<attribute key="areaEffect" value="redshimmer"/>
-		</attack>
 	</attacks>
-	<defenses armor="30" defense="30">
+	<defenses armor="45" defense="35">
 		<defense name="speed" interval="2000" chance="10" speedchange="550" duration="5000">
 			<attribute key="areaEffect" value="redshimmer"/>
 		</defense>
@@ -61,34 +58,29 @@
 		<voice sentence="I WILL FEAST ON YOUR SOUL!" yell="1"/>
 	</voices>
 	<loot>
+		<item id="11366" chance="6950" /><!-- ghastly dragon head -->
+		<item id="8473" chance="5525" /><!-- ultimate health potion -->
+		<item id="11368" chance="1125" /><!-- jade hat -->
+		<item id="5944" chance="12650" /><!-- soul orb -->
+		<item id="11323" chance="8525" /><!-- zaoan halberd -->
+		<item id="8472" chance="4150" /><!-- great spirit potion -->
+		<item id="2152" countmax="2" chance="23300" /><!-- platinum coin -->
+		<item id="11301" chance="1225" /><!-- zaoan armor -->
+		<item id="7591" chance="10700" /><!-- great health potion -->
+		<item id="11367" chance="21375" /><!-- undead heart -->
 		<item id="2148" countmax="100" chance="43725" /><!-- gold coin -->
 		<item id="2148" countmax="100" chance="43725" /><!-- gold coin -->
 		<item id="2148" countmax="68" chance="43725" /><!-- gold coin -->
-		<item id="2647" chance="48000" /><!-- plate legs -->
-		<item id="2149" countmax="7" chance="40000" /><!-- small emerald -->
-		<item id="7590" countmax="3" chance="30000" /><!-- great mana potion -->
-		<item id="2152" countmax="4" chance="23300" /><!-- platinum coin -->
-		<item id="8472" chance="4150" /><!-- great spirit potion -->
-		<item id="8473" chance="5525" /><!-- ultimate health potion -->
-		<item id="11367" countmax="2" chance="21375" /><!-- undead heart -->
-		<item id="11323" chance="8525" /><!-- zaoan halberd -->
-		<item id="11309" chance="5775" /><!-- twin hooks -->
-		<item id="5944" chance="12650" /><!-- soul orb -->
-		<item id="7886" chance="10000" /><!-- terra boots -->
-		<item id="9810" chance="9000" /><!-- rusty armor -->
 		<item id="6500" countmax="3" chance="9600" /><!-- demonic essence -->
-		<item id="11366" chance="6950" /><!-- ghastly dragon head -->
-		<item id="7885" chance="3000" /><!-- terra legs -->
-		<item id="11305" chance="1000" /><!-- drakinata -->
-		<item id="11305" chance="1075" /><!-- drakinata -->
+		<item id="9810" chance="3500" /><!-- rusty armor -->
 		<item id="11304" chance="1650" /><!-- zaoan legs -->
-		<item id="11303" chance="1550" /><!-- zaoan shoes -->
-		<item id="11227" chance="1325" /><!-- shiny stone -->
-		<item id="11301" chance="1225" /><!-- zaoan armor -->
-		<item id="11368" chance="1125" /><!-- jade hat -->
+		<item id="11309" chance="5775" /><!-- twin hooks -->
+		<item id="11305" chance="1075" /><!-- drakinata -->
 		<item id="11355" chance="1200" /><!-- spellweaver's robe -->
+		<item id="11227" chance="1325" /><!-- shiny stone -->
 		<item id="11240" chance="650" /><!-- guardian boots -->
-		<item id="11302" chance="650" /><!-- zaoan helmet -->
 		<item id="11307" chance="550" /><!-- zaoan sword -->
+		<item id="11303" chance="1550" /><!-- zaoan shoes -->
+		<item id="11302" chance="650" /><!-- zaoan helmet -->
 	</loot>
 </monster>

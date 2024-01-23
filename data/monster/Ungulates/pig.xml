@@ -21,12 +21,8 @@
 		<attack name="melee" interval="2000" skill="10" attack="0"/>
 	</attacks>
 	<defenses armor="2" defense="2"/>
-	<voices interval="5000" chance="10">
-		<voice sentence="Oink oink"/>
-		<voice sentence="Oink"/>
-	</voices>
 	<loot>
 		<item id="2666" countmax="4" chance="20000"/><!-- meat -->
-		<item id="10610" countmax="1" chance="1000"/><!-- pig foot -->
+		<item id="10610" countmax="1" chance="8500"/><!-- pig foot -->
 	</loot>
 </monster>

@@ -11,7 +11,7 @@
 		<flag illusionable="0"/>
 		<flag convinceable="1"/>
 		<flag pushable="0"/>
-		<flag canpushitems="0"/>
+		<flag canpushitems="1"/>
 		<flag staticattack="50"/>
 		<flag lightlevel="0"/>
 		<flag lightcolor="0"/>
@@ -21,16 +21,14 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="20" attack="20"/>
 	</attacks>
-	<defenses armor="9" defense="9"/>
+	<defenses armor="30" defense="30"/>
 	<elements>
+		<element icePercent="100"/>
 		<element firePercent="25"/>
 		<element holyPercent="10"/>
 		<element energyPercent="-15"/>
 		<element deathPercent="-5"/>
 	</elements>
-	<immunities>
-		<immunity ice="1"/>
-	</immunities>
 	<voices interval="2000" chance="5">
 		<voice sentence="Quisavu tukavi!"/>
 		<voice sentence="Si siyoqua jamjam!"/>
@@ -39,12 +37,15 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="30" chance="20000"/><!-- gold coin -->
+		<item id="2666" chance="20000"/><!-- meat -->
+		<item id="2671" chance="20000"/><!-- ham -->
 		<item id="2667" countmax="3" chance="10000"/><!-- fish -->
+		<item id="2398" chance="9000"/><!-- mace-->
 		<item id="2541" chance="2500"/><!-- bone shield -->
 		<item id="7381" chance="1750"/><!-- mammoth whopper -->
+		<item id="7441" chance="1000"/><!-- ice cube -->
 		<item id="7158" chance="900"/><!-- rainbow trout -->
-		<item id="7159" chance="100"/><!-- green perch -->
+		<item id="7159" chance="700"/><!-- green perch -->
 		<item id="2669" chance="750"/><!-- northern pike -->
-		<item id="2406" chance="750"/><!-- short sword -->
 	</loot>
 </monster>

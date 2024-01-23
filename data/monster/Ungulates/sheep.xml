@@ -20,15 +20,15 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="0" attack="0"/>
 	</attacks>
-	<defenses armor="1" defense="1"/>
+	<defenses armor="1" defense="2"/>
 	<elements>
-		<element firePercent="-5"/>
+		<element firePercent="-10"/>
 	</elements>
 	<voices interval="5000" chance="10">
 		<voice sentence="Maeh"/>
 	</voices>
 	<loot>
 		<item id="2666" countmax="4" chance="22500"/><!-- meat -->
-		<item id="11236" chance="900"/> <!-- wool -->
+		<item id="11236" chance="1025"/> <!-- wool -->
 	</loot>
 </monster>

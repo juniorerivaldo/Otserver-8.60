@@ -26,7 +26,7 @@
 			<attribute key="areaEffect" value="greenbubble"/>
 		</attack>
 	</attacks>
-	<defenses armor="6" defense="6"/>
+	<defenses armor="12" defense="10"/>
 	<elements>
 		<element earthPercent="20"/>
 		<element icePercent="20"/>

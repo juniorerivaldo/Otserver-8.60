@@ -15,9 +15,8 @@
 		<flag runonhealth="55"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-80"/>
+		<attack name="melee" interval="2000" skill="30" attack="40"/>
 	</attacks>
-	<defenses armor="20" defense="20"/>
 	<elements>
 		<element firePercent="10"/>
 	</elements>
@@ -29,5 +28,6 @@
 	<voices interval="5000" chance="10">
 		<voice sentence="You won't pass me."/>
 		<voice sentence="I have travelled far to fight here."/>
-	</voices>	
+	</voices>
+	<defenses armor="20" defense="19"/>
 </monster>

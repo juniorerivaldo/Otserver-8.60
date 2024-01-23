@@ -19,11 +19,11 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="30" attack="50"/>
-		<attack name="lifedrain" interval="1000" chance="12" range="1" min="0" max="-50">
+		<attack name="lifedrain" interval="1000" chance="12" range="1" min="-55" max="-100">
 			<attribute key="areaEffect" value="redshimmer"/>
 		</attack>
 	</attacks>
-	<defenses armor="22" defense="22">
+	<defenses armor="22" defense="23">
 		<defense name="healing" interval="1000" chance="12" min="25" max="49">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
@@ -33,8 +33,8 @@
 	</defenses>
 	<elements>
 		<element deathPercent="40"/>
-		<element holyPercent="-10"/>
-		<element physicalPercent="-10"/>
+		<element holyPercent="-20"/>
+		<element physicalPercent="-12"/>
 	</elements>
 	<immunities>
 		<immunity invisible="1"/>
@@ -45,19 +45,17 @@
 		<voice sentence="Your end has come!"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="18" chance="34000"/><!-- gold coin -->
-		<item id="2689" chance="1500"/><!-- bread -->
-		<item id="11220" chance="10000"/><!-- dark rosary -->
-		<item id="12448" chance="6000"/><!-- rope belt -->
-		<item id="10563" chance="1000"/><!-- book of prayers -->
-		<item id="1949" chance="1000"/><!-- scroll -->
-		<item id="2177" chance="990"/><!-- life crystal -->
-		<item id="12449" chance="900"/><!-- safety pin -->
+		<item id="2148" countmax="5" chance="34000"/><!-- gold coin -->
 		<item id="2193" chance="1400"/><!-- ankh -->
-		<item id="2642" chance="8250"/><!-- sandals -->
-		<item id="7620" chance="700"/><!-- mana potion -->
-		<item id="2044" chance="11750"/><!-- lamp -->
+		<item id="2689" chance="20000"/><!-- bread -->
 		<item id="2015" chance="10000"/><!-- brown flask -->
+		<item id="2044" chance="11750"/><!-- lamp -->
+		<item id="2467" chance="3500"/><!-- leather armor -->
+		<item id="2177" chance="2750"/><!-- life crystal -->
+		<item id="7620" chance="700"/><!-- mana potion -->
 		<item id="2166" chance="500"/><!-- power ring -->
+		<item id="1949" chance="18000"/><!-- scroll -->
+		<item id="2401" chance="20000"/><!-- staff -->
+		<item id="2642" chance="8250"/><!-- sandals -->
 	</loot>
 </monster>

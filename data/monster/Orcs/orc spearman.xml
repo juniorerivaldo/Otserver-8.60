@@ -19,28 +19,27 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="25" attack="20"/>
-		<attack name="physical" interval="1000" chance="7" range="7" min="0" max="-30">
+		<attack name="physical" interval="1000" chance="7" range="7" min="-16" max="-40">
 			<attribute key="shootEffect" value="spear"/>
 		</attack>
 	</attacks>
-	<defenses armor="6" defense="6"/>
+	<defenses armor="6" defense="12"/>
 	<elements>
 		<element energyPercent="20"/>
-		<element holyPercent="20"/>
+		<element holyPercent="10"/>
 		<element earthPercent="-10"/>
-		<element deathPercent="-10"/>
+		<element deathPercent="-5"/>
 	</elements>
 	<voices interval="5000" chance="10">
 		<voice sentence="Ugaar!"/>
 	</voices>
 	<loot>
 		<item id="2148" countmax="11" chance="22500"/><!-- gold coin -->
+		<item id="2420" chance="17250"/><!-- machete -->
 		<item id="2666" chance="30000"/><!-- meat -->
 		<item id="2389" chance="12000"/><!-- spear -->
 		<item id="2482" chance="12000"/><!-- studded helmet -->
 		<item id="2468" chance="12000"/><!-- studded legs -->
-		<item id="2420" chance="17250"/><!-- machete -->
-		<item id="12435"  chance="1000"/><!-- orc leather -->
-		<item id="11113"  chance="200"/><!-- orc tooth -->		
+		<item id="2220" chance="7000"/><!-- dirty fur -->
 	</loot>
 </monster>

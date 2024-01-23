@@ -49,7 +49,6 @@
 		<voice sentence="Fcccccchhhhhh"/>
 	</voices>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2152" countmax="4" chance="68125" /><!-- platinum coin -->
 		<item id="2214" chance="100000" /><!-- ring of healing -->
 		<item id="2528" chance="41400" /><!-- tower shield -->

@@ -20,12 +20,12 @@
 	<attacks>
 		<attack name="melee" interval="1500" skill="20" attack="16"/>
 	</attacks>
-	<defenses armor="6" defense="6"/>
+	<defenses armor="6" defense="8"/>
 	<elements>
 		<element energyPercent="20"/>
 		<element holyPercent="10"/>
-		<element earthPercent="-10"/>
-		<element deathPercent="-10"/>
+		<element earthPercent="-4"/>
+		<element deathPercent="-5"/>
 	</elements>
 	<voices interval="5000" chance="10">
 		<voice sentence="Grrrr"/>
@@ -37,14 +37,13 @@
 	<loot>
 		<item id="2148" countmax="12" chance="26750"/><!-- gold coin -->
 		<item id="2380" chance="18750"/><!-- hand axe -->
-		<item id="2666" chance="11750"/><!-- meat -->
-		<item id="2389" chance="12000"/><!-- spear -->
-		<item id="2461" chance="9750"/><!-- leather helmet -->
 		<item id="2643" chance="8750"/><!-- leather boots -->
+		<item id="2461" chance="9750"/><!-- leather helmet -->
+		<item id="2666" chance="11750"/><!-- meat -->
 		<item id="2120" chance="8750"/><!-- rope -->
+		<item id="2389" chance="12000"/><!-- spear -->
 		<item id="2512" chance="15000"/><!-- wooden shield -->
 		<item id="2448" chance="4500"/><!-- studded club -->
-		<item id="2170" chance="20"/><!-- silver amulet -->
-		<item id="10606" chance="70"/><!-- bunch of troll hair -->	
+		<item id="2170" chance="50"/><!-- silver amulet -->
 	</loot>
 </monster>

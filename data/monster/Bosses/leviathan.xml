@@ -50,15 +50,9 @@
 		<element deathPercent="-10"/>
 	</elements>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
-		<item id="10529" chance="100500" /><!-- sea serpent trophy -->
-		<item id="2152" countmax="5" chance="59875" /><!-- platinum coin -->
-		<item id="9811" chance="87800" /><!-- rusty legs -->
-		<item id="2146" countmax="5" chance="23675" /><!-- small sapphire -->
-		<item id="9808" chance="81450" /><!-- rusty armor -->
-		<item id="10220" chance="100500" /><!-- leviathan's amulet -->
-		<item id="7428" chance="51300" /><!-- bonebreaker -->
-		<item id="7589" chance="60300" /><!-- strong mana potion -->
-		<item id="10521" chance="14800" /><!-- moon backpack -->
+		<item id="2148" countmax="80" chance="40000"/><!-- gold coin -->
+		<item id="2152" countmax="6" chance="40000"/><!-- platinum coin -->
+		<item id="2146" countmax="3" chance="10000"/><!-- small saphire -->
+		<item id="2148" countmax="80" chance="40000"/><!-- gold coin -->
 	</loot>
 </monster>

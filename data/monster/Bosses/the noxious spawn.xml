@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="The Noxious Spawn" nameDescription="the noxious spawn" race="venom" experience="6000" speed="360" manacost="0">
 	<health now="9500" max="9500"/>
-	<look type="220" corpse="6061"/>
+	<look type="220" corpse="4323"/>
 	<targetchange interval="5000" chance="8"/>
 	<strategy attack="100" defense="0"/>
 	<flags>
@@ -57,12 +57,11 @@
 		<voice sentence="I bring your deathhh, mortalssss"/>
 	</voices>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2152" countmax="5" chance="51850" /><!-- platinum coin -->
 		<item id="7456" chance="37000" /><!-- noble axe -->
 		<item id="2152" countmax="95" chance="10750" /><!-- assassin star -->
 		<item id="7365" chance="525" /><!-- onyx arrow -->
-		<item id="10310" chance="31500" /><!-- claw of the noxious spawn-->
+		<item id="10309" chance="31500" /><!-- claw of the noxious spawn-->
 		<item id="2168" chance="35000" /><!-- life ring -->
 		<item id="2547" countmax="29" chance="36250" /><!-- power bolt -->
 		<item id="7386" chance="27750" /><!-- mercenary sword -->

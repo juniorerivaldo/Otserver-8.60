@@ -10,7 +10,7 @@
 		<flag hostile="1"/>
 		<flag illusionable="0"/>
 		<flag convinceable="0"/>
-		<flag pushable="1"/>
+		<flag pushable="0"/>
 		<flag canpushitems="1"/>
 		<flag canpushcreatures="1"/>
 		<flag targetdistance="1"/>
@@ -19,7 +19,6 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="1200" min="-0" max="-100"/>
-		<attack name="Blood Rage" interval="2000" chance="30" target="1"/>
 	</attacks>
 	<defenses armor="30" defense="35">
 		<defense name="speed" interval="1000" chance="40" speedchange="380" duration="8000">

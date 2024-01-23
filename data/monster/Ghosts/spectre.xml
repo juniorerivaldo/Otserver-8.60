@@ -15,7 +15,7 @@
 		<flag canpushcreatures="1"/>
 		<flag targetdistance="1"/>
 		<flag staticattack="90"/>
-		<flag runonhealth="200"/>
+		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="50" attack="90"/>
@@ -26,54 +26,50 @@
 		<attack name="poisonfield" interval="1000" chance="17" range="7" radius="3" target="1">
 			<attribute key="shootEffect" value="poison"/>
 		</attack>
-		<attack name="manadrain" interval="3000" chance="25" range="7" min="-100" max="-400">
-			<attribute key="areaEffect" value="redshimmer"/>
-		</attack>
-		<attack name="lifedrain" interval="2000" min="-170" max="-260" target="1">
+		<attack name="manadrain" interval="3000" chance="25" range="7" min="-10" max="-400">
 			<attribute key="areaEffect" value="redshimmer"/>
 		</attack>
 	</attacks>
-	<defenses armor="25" defense="25">
-		<defense name="healing" interval="5000" chance="50" min="350" max="700">
+	<defenses armor="25" defense="20">
+		<defense name="healing" interval="1000" chance="50" min="75" max="125">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>
 	<elements>
-		<element physicalPercent="90"/>
-		<element icePercent="11"/>
-		<element firePercent="-10"/>
-		<element energyPercent="-5"/>
+		<element earthPercent="100"/>
+		<element deathPercent="100"/>
+		<element physicalPercent="60"/>
+		<element icePercent="55"/>
+		<element firePercent="-23"/>
+		<element energyPercent="-20"/>
 	</elements>
 	<immunities>
 		<immunity paralyze="1"/>
 		<immunity invisible="1"/>
-		<immunity earth="1"/>
-		<immunity death="1"/>
 	</immunities>
 	<voices interval="5000" chance="10">
 		<voice sentence="Revenge ... is so ... sweet!"/>
 		<voice sentence="Life...force! Feed me your... lifeforce!"/>
-		<voice sentence="Mor...tals!"/>
-		<voice sentence="Buuuuuh"/>
 	</voices>
 	<loot>
 		<item id="2148" countmax="100" chance="39000"/><!-- gold coin -->
 		<item id="2148" countmax="100" chance="39000"/><!-- gold coin -->
 		<item id="2148" countmax="100" chance="39000"/><!-- gold coin -->
-		<item id="2148" countmax="1" chance="39000"/><!-- gold coin -->
+		<item id="2260" chance="25000"/><!-- blank rune -->
 		<item id="2152" countmax="7" chance="2000"/><!-- platinum coin -->
-		<item id="2189" chance="9250"/><!-- wand of cosmic energy -->
-		<item id="2071" chance="11000"/><!-- lyre -->
-		<item id="6500" chance="6000"/><!-- demonic essence -->
+		<item id="2642" chance="21000"/><!-- sandals -->
 		<item id="5944" chance="8000"/><!-- soul orb -->
-		<item id="5909" chance="4250"/><!-- white piece of cloth -->
-		<item id="7590" chance="550"/><!-- great mana potion -->
-		<item id="11227" chance="25000"/><!-- shiny stone -->
-		<item id="2134" chance="1100"/><!-- silver brooch -->
-		<item id="7383" chance="950"/><!-- relic sword -->
-		<item id="6300" chance="1100"/><!-- death ring -->
 		<item id="2165" chance="400"/><!-- stealth ring -->
+		<item id="2189" chance="9250"/><!-- wand of cosmic energy -->
+		<item id="6500" chance="6000"/><!-- demonic essence -->
+		<item id="2071" chance="11000"/><!-- lyre -->
+		<item id="2260" chance="25000"/><!-- blank rune -->
+		<item id="7383" chance="950"/><!-- relic sword -->
+		<item id="2134" chance="1100"/><!-- silver brooch -->
+		<item id="5909" chance="4250"/><!-- white piece of cloth -->
+		<item id="6300" chance="1100"/><!-- death ring -->
+		<item id="7590" chance="550"/><!-- great mana potion -->
+		<item id="2134" chance="200"/><!-- shadow sceptre -->
 		<item id="2136" chance="100"/><!--demonbone amulet -->
-		<item id="7451" chance="200"/><!-- shadow sceptre -->
 	</loot>
 </monster>

@@ -21,24 +21,18 @@
 		<attack name="melee" interval="2000" skill="15" attack="16"/>
 		<attack name="lifedrain" interval="2000" chance="15" range="7" min="-7" max="-13"/>
 	</attacks>
-	<defenses armor="5" defense="5"/>
+	<defenses armor="2" defense="9"/>
 	<elements>
 		<element holyPercent="-5"/>
 	</elements>
 	<immunities>
 		<immunity death="1"/>
 	</immunities>
-	<voices interval="5000" chance="10">
-		<voice sentence="Ahrrr... uhmmm... hmm..."/>
-		<voice sentence="Grrr..."/>
-		<voice sentence="Urrrgh... gnarrr..."/>
-	</voices>
 	<loot>
-		<item id="2148" countmax="10" chance="44950" /><!-- gold coin -->
-		<item id="2230" chance="28825" /><!-- bone -->
-		<item id="2398" chance="13825" /><!-- mace -->
+		<item id="2148" countmax="9" chance="44950" /><!-- gold coin -->
+		<item id="2230" chance="58825" /><!-- bone -->
 		<item id="2789" chance="4675" /><!-- brown mushroom -->
 		<item id="2787" countmax="3" chance="8825" /><!-- white mushroom -->
-		<item id="2376" chance="2000" /><!-- sword -->
+		<item id="2398" chance="33825" /><!-- mace -->
 	</loot>
 </monster>

@@ -56,7 +56,6 @@
 		<voice sentence="HISSSS"/>
 	</voices>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="7589" countmax="2" chance="100000" /> <!-- strong mana potion -->
 		<item id="2146" countmax="5" chance="56325" /> <!-- small sapphire -->
 		<item id="9971" countmax="3" chance="47725" /> <!-- gold ingot -->

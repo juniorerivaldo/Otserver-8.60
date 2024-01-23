@@ -23,7 +23,7 @@
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</attack>
 	</attacks>
-	<defenses armor="25" defense="25">
+	<defenses armor="30" defense="35">
 		<defense name="healing" interval="2000" chance="40" min="50" max="100">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
@@ -47,6 +47,6 @@
 		<voice sentence="I feel you're getting sleepy! Maeh!"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="60" chance="50000"/><!-- gold coins -->
+		<item id="2148" countmax="56" chance="50000"/><!-- gold coins -->
 	</loot>
 </monster>

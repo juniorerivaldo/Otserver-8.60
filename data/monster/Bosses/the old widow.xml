@@ -51,7 +51,6 @@
 		<summon name="giant spider" interval="1000" chance="13" max="2"/>
 	</summons>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2148" countmax="99" chance="100000"/><!-- gold coin -->
 		<item id="2152" countmax="10" chance="100000"/><!-- platinum coin -->
 		<item id="5879" chance="100000"/><!-- spider silk -->

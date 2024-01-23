@@ -19,13 +19,12 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="0" attack="0"/>
 	</attacks>
-	<defenses armor="1" defense="1"/>
+	<defenses armor="1" defense="2"/>
 	<voices interval="5000" chance="10">
 		<voice sentence="Chchch"/>
 	</voices>
 	<loot>
 		<item id="7909" chance="2000"/><!-- walnut -->
-		<item id="11213" chance="7500"/><!-- acorn -->
-		<item id="7910" chance="17000"/><!-- peanut -->
+		<item id="7910" chance="2500"/><!-- peanut -->
 	</loot>
 </monster>

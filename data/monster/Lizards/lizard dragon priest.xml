@@ -29,7 +29,7 @@
 		</attack>
 	</attacks>
 	<defenses armor="25" defense="25">
-		<defense name="healing" interval="2000" chance="8" min="200" max="330">
+		<defense name="healing" interval="2000" chance="8" min="275" max="325">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 		<defense name="invisible" interval="2000" chance="10">
@@ -46,26 +46,23 @@
 		<summons maxSummons="2">
 		<summon name="Dragon Hatchling" interval="2000" chance="20" max="2"/>
 	</summons>
-	<voices interval="5000" chance="10">
-		<voice sentence="I ssssmell warm blood!"/>
-	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="38450" /><!-- gold coin -->
-		<item id="2148" countmax="90" chance="38450" /><!-- gold coin -->
+		<item id="11245" chance="1475" /><!-- bunch of ripe rice -->
 		<item id="2152" countmax="2" chance="3500" /><!-- platinum coin -->
-		<item id="7589" chance="12575" /><!-- strong mana potion -->
+		<item id="2154" chance="1600" /><!-- yellow gem -->
+		<item id="2150" countmax="3" chance="3900" /><!-- small amethyst -->
 		<item id="11361" chance="10375" /><!-- dragon priest's wandtip -->
-		<item id="2187" chance="2000" /><!-- wand of inferno -->
-		<item id="5881" countmax="3" chance="1525" /><!-- lizard scale -->
+		<item id="8871" chance="1250" /><!-- focus cape -->
+		<item id="7589" chance="12575" /><!-- strong mana potion -->
 		<item id="5876" chance="1375" /><!-- lizard leather -->
 		<item id="2181" chance="1550" /><!-- terra rod -->
-		<item id="2154" chance="1600" /><!-- yellow gem -->
-		<item id="11245" chance="1475" /><!-- bunch of ripe rice -->
-		<item id="2168" chance="1350" /><!-- life ring -->
-		<item id="8871" chance="1250" /><!-- focus cape -->
-		<item id="11303" chance="950" /><!-- zaoan shoes -->
-		<item id="11356" chance="775" /><!-- zaoan robe -->
-		<item id="2150" countmax="3" chance="3900" /><!-- small amethyst -->	
 		<item id="7590" chance="8625" /><!-- great mana potion -->
+		<item id="2148" countmax="100" chance="38450" /><!-- gold coin -->
+		<item id="2148" countmax="90" chance="38450" /><!-- gold coin -->
+		<item id="11356" chance="775" /><!-- zaoan robe -->
+		<item id="2187" chance="2000" /><!-- wand of inferno -->
+		<item id="5881" countmax="3" chance="1525" /><!-- lizard scale -->
+		<item id="11303" chance="950" /><!-- zaoan shoes -->
+		<item id="2168" chance="1350" /><!-- life ring -->
 	</loot>
 </monster>

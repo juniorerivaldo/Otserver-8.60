@@ -20,7 +20,7 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="30" attack="50"/>
 	</attacks>
-	<defenses armor="15" defense="15"/>
+	<defenses armor="15" defense="25"/>
 	<elements>
 		<element firePercent="20"/>
 		<element holyPercent="10"/>
@@ -33,15 +33,19 @@
 	</voices>
 	<loot>
 		<item id="2148" countmax="20" chance="32500"/><!-- gold coin -->
-		<item id="12428" chance="8000"/><!-- minotaur horn -->
-		<item id="12438" chance="5000"/><!-- piece of warrior armor -->
+		<item id="2649" chance="14000"/><!-- leather legs -->
+		<item id="2388" chance="11750"/><!-- hatchet -->
+		<item id="2666" chance="11500"/><!-- meat -->
+		<item id="2580" chance="5750"/><!-- fishing rod -->
 		<item id="2465" chance="3500"/><!-- brass armor -->
 		<item id="2464" chance="3000"/><!-- chain armor -->
 		<item id="2513" chance="2150"/><!-- battle shield -->
 		<item id="5878" chance="1000"/><!-- minotaur leather -->
-		<item id="2580" chance="5750"/><!-- fishing rod -->
+		<item id="2648" chance="600"/><!-- chain legs -->
 		<item id="2387" chance="500"/><!-- double axe -->
 		<item id="7618" chance="500"/><!-- health potion -->
-		<item id="7401" chance="10"/><!-- minotaur trophy -->
+		<item id="2458" chance="7000"/><!-- chain helmet -->
+		<item id="7588" chance="150"/><!-- strong health potion -->
+		<item id="7401" chance="100"/><!-- minotaur trophy -->
 	</loot>
 </monster>

@@ -23,7 +23,7 @@
 			<attribute key="shootEffect" value="snowball"/>
 		</attack>
 	</attacks>
-	<defenses armor="25" defense="25"/>
+	<defenses armor="30" defense="35"/>
 	<immunities>
 		<immunity lifedrain="1"/>
 		<immunity invisible="1"/>

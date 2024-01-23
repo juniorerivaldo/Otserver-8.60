@@ -44,10 +44,8 @@
 		<summon name="Banshee" interval="4000" chance="50"/>
 	</summons>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2148" countmax="98" chance="40000"/><!-- gold coin -->
 		<item id="8752" chance="100000"/><!-- the ring of the count -->
-		<item id="6300" chance="85000"/><!-- death ring -->
-		<item id="2391" chance="23000"/><!-- war hammer -->
+		<item id="2391" chance="2300"/><!-- war hammer -->
 	</loot>
 </monster>

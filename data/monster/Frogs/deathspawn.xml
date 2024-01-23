@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<monster name="Deathspawn" namedescription="a deathspawn" race="blood" experience="0" speed="230" manacost="305">
+<monster name="Deathspawn" namedescription="a deathspawn" race="blood" experience="20" speed="230" manacost="305">
 	<health now="225" max="225"/>
-	<look type="226" head="114" body="98" legs="97" feet="114" corpse="6079"/>
+	<look type="226" head="114" body="98" legs="97" feet="114" corpse="2220"/>
 	<targetchange interval="5000" chance="8"/>
 	<strategy attack="100" defense="0"/>
 	<flags>
@@ -26,7 +26,7 @@
 			<attribute key="areaEffect" value="purpleenergy"/>
 		</attack>
 	</attacks>
-	<defenses armor="5" defense="5"/>
+	<defenses armor="1" defense="5"/>
 	<voices interval="5000" chance="10">
 		<voice sentence="Ribbit!"/>
 		<voice sentence="Ribbit! Ribbit!"/>
@@ -39,7 +39,4 @@
 		<element deathPercent="100"/>
 		<element earthPercent="100"/>
 	</elements>
-	<loot>
-		<item id="2220" chance="1000"/><!-- dirty fur -->
-	</loot>
 </monster>

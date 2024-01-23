@@ -19,22 +19,20 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="50" attack="15"/>
-	<attack name="physical" interval="1000" chance="9" range="7" min="-0" max="-45">
-			<attribute key="shootEffect" value="smallstone"/>
-		</attack>
 	</attacks>
-	<defenses armor="40" defense="40">
-		<defense name="healing" interval="1000" chance="7" min="5" max="11">
+	<defenses armor="40" defense="45">
+		<defense name="healing" interval="1000" chance="7" min="20" max="100">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>
 	<elements>
 		<element earthPercent="50"/>
-		<element holyPercent="50"/>
+		<element holyPercent="30"/>
+		<element firePercent="-10"/>
 		<element energyPercent="-5"/>
-		<element physicalPercent="5"/>
-		<element icePercent="10"/>
-		<element deathPercent="10"/>
+		<element physicalPercent="40"/>
+		<element icePercent="25"/>
+		<element deathPercent="30"/>
 	</elements>
 	<immunities>
 		<immunity invisible="1"/>
@@ -47,11 +45,10 @@
 		<voice sentence="Target identified: Rat! Termination initiated!"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="89" chance="21000"/><!-- gold coin -->
+		<item id="2148" countmax="86" chance="21000"/><!-- gold coin -->
 		<item id="9808" chance="13275"/><!-- rusty armor -->
-		<item id="8309" countmax="3" chance="500"/><!-- nails -->
-		<item id="2207" chance="650"/><!-- sword ring -->
 		<item id="5880" chance="650"/><!-- iron ore -->
-		<item id="10572" chance="200"/><!-- gear crystal -->	
+		<item id="2207" chance="650"/><!-- sword ring -->
+		<item id="8309" countmax="3" chance="500"/><!-- nails -->
 	</loot>
 </monster>

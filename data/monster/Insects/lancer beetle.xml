@@ -15,18 +15,11 @@
 		<flag canpushcreatures="0"/>
 		<flag targetdistance="1"/>
 		<flag staticattack="90"/>
-		<flag runonhealth="30"/>
+		<flag runonhealth="80"/>
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="40" attack="60"/>
-		<attack name="poison" interval="2000" chance="20" length="8" spread="3" min="0" max="-115">
-			<attribute key="areaEffect" value="poison"/>
-		</attack>
-		<attack name="poison" interval="1000" chance="12" range="7" min="-15" max="-145">
-			<attribute key="shootEffect" value="poison"/>
-			<attribute key="areaEffect" value="poison"/>
-		</attack>
-		<attack name="poisoncondition" interval="3000" chance="17" radius="5" target="0" min="-30" max="-100">
+		<attack name="poison" interval="2000" chance="20" length="8" spread="3" min="-0" max="-0">
 			<attribute key="areaEffect" value="poison"/>
 		</attack>
 	</attacks>
@@ -48,8 +41,8 @@
 		<voice sentence="Crump!" yell="1"/>
 	</voices>
 	<loot>
-		<item id="2148" countmax="100" chance="100000"/><!-- gold coin -->
-		<item id="2148" countmax="30" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="61" chance="100000"/><!-- gold coin -->
+		<item id="2148" countmax="67" chance="100000"/><!-- gold coin -->
 		<item id="11372" chance="16666"/><!-- lancer beetle shell -->
 		<item id="10557" chance="8333"/><!-- poisonous slime -->
 		<item id="10609" chance="4166"/><!-- lump of dirt -->
@@ -57,4 +50,3 @@
 		<item id="2150" chance="147"/><!-- small amethyst -->
 	</loot>
 </monster>
-

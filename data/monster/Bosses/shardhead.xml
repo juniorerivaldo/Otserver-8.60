@@ -46,7 +46,6 @@
 		<voice sentence="Chrr."/>
 	</voices>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2148" countmax="87" chance="99700" /> <!-- gold coin -->
 		<item id="7290" chance="40000" /> <!-- shard -->
 		<item id="7588" chance="100000" /> <!-- strong health potion -->

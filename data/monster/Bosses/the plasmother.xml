@@ -49,7 +49,6 @@
 		<voice sentence="Blubb"/>
 	</voices>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2148" countmax="70" chance1="20000" chancemax="0"/><!-- gold coins -->
 		<item id="2148" countmax="60" chance1="20000" chancemax="0"/><!-- gold coins -->
 		<item id="2148" countmax="45" chance1="20000" chancemax="0"/><!-- gold coins -->

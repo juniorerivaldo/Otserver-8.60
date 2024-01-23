@@ -23,7 +23,7 @@
 			<attribute key="areaEffect" value="redshimmer"/>
 		</attack>
 	</attacks>
-	<defenses armor="70" defense="70"/>
+	<defenses armor="30" defense="35"/>
 	<immunities>
 		<immunity ice="1"/>
 		<immunity fire="1"/>
@@ -42,11 +42,11 @@
 	</voices>
 	<loot>
     <item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
-    <item id="2148" countmax="29" chance="50000" /><!-- gold coin -->
-	<item id="12446" chance="9000" /><!-- quara pincers -->
-	<item id="2463" chance="4545" /><!-- plate armor -->
-	<item id="2147" countmax="2" chance="1754" /><!-- small ruby -->
-	<item id="2381" chance="2000" /><!-- halberd -->
+    <item id="2148" countmax="43" chance="50000" /><!-- gold coin -->
+	<item id="12446" chance="10000" /><!-- quara pincers -->
+    <item id="2463" chance="4545" /><!-- plate armor -->
+    <item id="2381" chance="2000" /><!-- halberd -->
+    <item id="2147" countmax="2" chance="1754" /><!-- small ruby -->
     <item id="5895" chance="826" /><!-- fish fin -->
     <item id="2177" chance="413" /><!-- life crystal -->
 </loot>

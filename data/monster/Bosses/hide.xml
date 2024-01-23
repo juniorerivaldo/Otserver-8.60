@@ -38,7 +38,6 @@
 		<immunity earth="1"/>
 	</immunities>
 	<loot>
-		<item id="12700" chance="100000" countmax="1"/><!-- boss point -->
 		<item id="2152" countmax="5" chance="100000" /> <!-- platinum coin -->
 		<item id="2457" chance="50000" /> <!-- steel helmet -->
 		<item id="5879" chance="50000" /> <!-- spider silk -->

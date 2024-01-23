@@ -18,25 +18,25 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="45" attack="20"/>
-		<attack name="fire" interval="1000" chance="12" length="8" spread="3" min="-60" max="-90">
+		<attack name="fire" interval="1000" chance="12" length="8" spread="3" min="-10" max="-60">
 			<attribute key="areaEffect" value="firearea"/>
 		</attack>
-		<attack name="lifedrain" interval="1000" chance="14" length="8" spread="3" min="-30" max="-55">
+		<attack name="lifedrain" interval="1000" chance="14" length="8" spread="3" min="-20" max="-40">
 			<attribute key="areaEffect" value="poff"/>
 		</attack>
 	</attacks>
-	<defenses armor="15" defense="15">
+	<defenses armor="25" defense="38">
 		<defense name="healing" interval="1000" chance="13" min="8" max="33">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>
 	<elements>
-		<element earthPercent="75"/>
+		<element firePercent="100"/>
+		<element earthPercent="60"/>
 		<element icePercent="-10"/>
-		<element energyPercent="-5"/>
+		<element energyPercent="-6"/>
 	</elements>
 	<immunities>
-		<immunity fire="1"/>
 		<immunity paralyze="1"/>
 		<immunity invisible="1"/>
 	</immunities>
@@ -48,6 +48,5 @@
 		<item id="2148" countmax="55" chance="37500"/><!-- gold coin -->
 		<item id="2672" chance="25000"/><!-- dragon ham -->
 		<item id="7618" chance="5000"/><!-- health potion -->
-		<item id="12413" chance="4000"/><!-- dragon's tail -->
 	</loot>
 </monster>

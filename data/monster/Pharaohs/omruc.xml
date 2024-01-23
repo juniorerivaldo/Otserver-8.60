@@ -23,19 +23,19 @@
 		<attack name="poison" interval="2000" chance="20" min="-200" max="-500">
 			<attribute key="shootEffect" value="poisonarrow"/>
 		</attack>
-		<attack name="fire" interval="1000" chance="20" range="3" min="-100" max="-500">
+		<attack name="fire" interval="1000" chance="20" range="3" min="-120" max="-450">
 			<attribute key="shootEffect" value="burstarrow"/>
 			<attribute key="areaEffect" value="explosionarea"/>
 		</attack>
-		<attack name="melee" interval="3000" chance="20" min="-100" max="-500">
+		<attack name="melee" interval="3000" chance="20" min="-150" max="-500">
 			<attribute key="shootEffect" value="arrow"/>
 		</attack>
-		<attack name="speed" interval="1000" chance="25" range="7" speedchange="-900" duration="5000">
+		<attack name="speed" interval="1000" chance="25" range="7" speedchange="-900" duration="50000">
 			<attribute key="areaEffect" value="redshimmer"/>
 		</attack>
 	</attacks>
-	<defenses armor="60" defense="60">
-		<defense name="healing" interval="1000" chance="17" min="100" max="400">
+	<defenses armor="20" defense="35">
+		<defense name="healing" interval="1000" chance="17" min="100" max="200">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 		<defense name="invisible" interval="2000" chance="14" duration="8000">
@@ -43,14 +43,9 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element holyPercent="-10"/>
-		<element energyPercent="-5"/>
-		<element icePercent="-5"/>
-		<element firePercent="20"/>
-		<element earthPercent="20"/>
+		<element deathPercent="100"/>
 	</elements>
 	<immunities>
-		<immunity death="1"/>
 		<immunity paralyze="1"/>
 		<immunity invisible="1"/>
 	</immunities>
@@ -61,24 +56,22 @@
 		<voice sentence="Now chhhou shhhee me ... Now chhhou don't!!"/>
 		<voice sentence="Chhhhou are marked ashhh my prey."/>
 		<voice sentence="Psssst, I am over chhhere."/>
-		<voice sentence="Catchhhh me if chhhou can."/>
-		<voice sentence="Die!"/>
 	</voices>
 	<loot>
-		<item id="2352" chance="100000"/><!-- crystal arrow -->
-		<item id="2148" countmax="100" chance="50000"/><!-- gold coin -->
-		<item id="2148" countmax="100" chance="50000"/><!-- gold coin -->		
-		<item id="2148" countmax="8" chance="50000"/><!-- gold coin -->
-		<item id="2674" countmax="2" chance="10000"/><!-- apple -->
-		<item id="2544" countmax="25" chance="10000"/><!-- arrow-->
-		<item id="2545" countmax="19" chance="10000"/><!-- poison arrow -->
+		<item id="2148" countmax="90" chance="50000"/><!-- gold coin -->
+		<item id="2148" countmax="70" chance="50000"/><!-- gold coin -->
+		<item id="2443" countmax="2" chance="10000"/><!-- apple -->
+		<item id="2544" countmax="21" chance="10000"/><!-- arrow-->
+		<item id="2545" countmax="20" chance="10000"/><!-- poison arrow -->
 		<item id="2546" countmax="15" chance="10000"/><!-- burst arrow -->
-		<item id="7365" countmax="6" chance="10000"/><!-- onyx arrow -->
-		<item id="2547" countmax="4" chance="10000"/><!-- power bolt -->		
-		<item id="7591" chance="7000"/><!-- great health potion-->
+		<item id="7365" countmax="2" chance="10000"/><!-- onyx arrow -->
+		<item id="2547" countmax="3" chance="10000"/><!-- power bolt -->
 		<item id="2145" countmax="3" chance="7000"/><!-- small diamond -->
+		<item id="7591" chance="7000"/><!-- great health potion-->
 		<item id="2165" chance="5000"/><!-- stealth ring -->
+		<item id="2154" chance="5000"/><!-- yellow gem -->
 		<item id="2195" chance="1500"/><!-- boots of haste -->
-		<item id="11207" chance="100"/><!-- mini mummy -->	
+		<item id="2444" chance="300"/><!-- hammer of wrath -->
+		<item id="2352" chance="100000"/><!-- crystal arrow -->
 	</loot>
 </monster>

@@ -8,27 +8,23 @@
 		<flag summonable="0"/>
 		<flag attackable="1"/>
 		<flag hostile="1"/>
-		<flag illusionable="0"/>
+		<flag illusionable="1"/>
 		<flag convinceable="0"/>
 		<flag pushable="0"/>
-		<flag canpushitems="1"/>
+		<flag canpushitems="0"/>
 		<flag canpushcreatures="0"/>
 		<flag targetdistance="1"/>
 		<flag runonhealth="0"/>
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="30" attack="40"/>
-		<attack name="physical" interval="2000" chance="20" range="7" min="-0" max="-35">
+		<attack name="physical" interval="2000" chance="20" range="7" min="-0" max="-60">
 			<attribute key="shootEffect" value="suddendeath"/>
 			<attribute key="areaEffect" value="mortarea"/>
 		</attack>
 	</attacks>
-	<defenses armor="16" defense="16">
-		<defense name="speed" interval="50000" chance="100" speedchange="2500" duration="500">
-			<attribute key="areaEffect" value="redshimmer"/>
-		</defense>
-	</defenses>
 	<immunities>
+		<immunity lifedrain="1"/>
 		<immunity paralyze="1"/>
 		<immunity outfit="1"/>
 		<immunity invisible="1"/>

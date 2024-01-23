@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="Norgle Glacierbeard" nameDescription="norgle glacierbeard" race="blood" experience="2100" speed="195" manacost="0">
-	<health now="4280" max="4280"/>
+	<health now="4300" max="4300"/>
 	<look type="257" corpse="7349"/>
 	<strategy attack="100" defense="0"/>
 	<flags>
@@ -14,18 +14,15 @@
 		<flag targetdistance="1"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-230" />
-		<attack name="lifedrain" interval="3000" chance="25" range="7" min="0" max="-150">
-			<attribute key="areaEffect" value="redshimmer"/>
-		</attack>
+		<attack name="melee" interval="2000" skill="80" attack="50"/>
 		<!--<attack name="smoke wave" interval="1000" chance="35"/> -->
 	</attacks>
-	<defenses armor="27" defense="27"/>
+	<defenses armor="25" defense="27"/>
 	<elements>
+		<element icePercent="100"/>
 		<element deathPercent="-9"/>
 	</elements>
 	<immunities>
-		<immunity ice="1"/>
 		<immunity outfit="1"/>
 		<immunity drunk="1"/>
 		<immunity invisible="1"/>

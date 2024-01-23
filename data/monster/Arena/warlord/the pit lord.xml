@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster name="The Pit Lord" nameDescription="the pit lord" race="blood" experience="2500" speed="270" manacost="0">
-	<health now="5270" max="5270"/>
+	<health now="4500" max="4500"/>
 	<look type="55" corpse="7349"/>
 	<strategy attack="100" defense="0"/>
 	<flags>
@@ -14,16 +14,16 @@
 		<flag targetdistance="1"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-368" />
-		<attack name="physical" interval="7500" chance="100" min="0" max="-200">
+		<attack name="melee" interval="2000" skill="85" attack="80"/>
+		<attack name="physical" interval="7500" chance="100" min="-100" max="-250">
 			<attribute key="shootEffect" value="largerock"/>
 		</attack>
 	</attacks>
-	<defenses armor="46" defense="46">
+	<defenses armor="46" defense="44">
 		<defense name="speed" interval="5000" chance="100" duration="2500" speedchange="500">
 			<attribute key="areaEffect" value="redshimmer"/>
 		</defense>
-		<defense name="healing" interval="6000" chance="65" min="40" max="70">
+		<defense name="healing" interval="6000" chance="65" min="20" max="50">
 			<attribute key="areaEffect" value="blueshimmer"/>
 		</defense>
 	</defenses>

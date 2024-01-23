@@ -14,16 +14,12 @@
 		<flag targetdistance="1"/>
 	</flags>
 	<attacks>
-		<attack name="melee" interval="2000" min="0" max="-80" />
+		<attack name="melee" interval="2000" skill="30" attack="40"/>
 		<attack name="physical" interval="1000" chance="80" range="5" radius="1" target="1" min="0" max="-50">
 			<attribute key="shootEffect" value="smallstone"/>
 		</attack>
 	</attacks>
-	<defenses armor="18" defense="18">
-		<defense name="speed" interval="5000" chance="15" speedchange="200" duration="20000">
-			<attribute key="areaEffect" value="redshimmer"/>
-		</defense>
-	</defenses>
+	<defenses armor="15" defense="17"/>
 	<elements>
 		<element firePercent="-5"/>
 	</elements>

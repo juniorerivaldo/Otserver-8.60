@@ -20,9 +20,9 @@
 	<attacks>
 		<attack name="melee" interval="2000" skill="10" attack="10"/>
 	</attacks>
-	<defenses armor="1" defense="1"/>
+	<defenses armor="1" defense="3"/>
 	<elements>
-		<element firePercent="-10"/>
+		<element firePercent="-13"/>
 	</elements>
 	<voices interval="5000" chance="10">
 		<voice sentence="Meeeeep!"/>
@@ -31,7 +31,7 @@
 	<loot>
 		<item id="2148" countmax="3" chance="43000"/><!-- gold coin -->
 		<item id="3976" countmax="3" chance="35000"/><!-- worm -->
-		<item id="8112" chance="20000"/><!-- cheese -->
-		<item id="2687" chance="10"/><!-- cheese -->
+		<item id="2696" chance="32000"/><!-- cheese -->
+		<item id="2687" chance="1000"/><!-- cookie -->
 	</loot>
 </monster>

@@ -18,19 +18,8 @@
 	</flags>
 	<attacks>
 		<attack name="melee" interval="2000" skill="50" attack="35"/>
-		<attack name="manadrain" interval="5000" chance="13" range="7" min="-50" max="-1000"/>
 	</attacks>
-	<defenses armor="28" defense="28">
-		<defense name="invisible" interval="5000" chance="50" duration="5000">
-			<attribute key="areaEffect" value="redshimmer"/>
-		</defense>
-	</defenses>
-	<elements>
-		<element earthpercent="-25"/>
-		<element icePercent="-5"/>
-		<element holyPercent="-5"/>
-		<element firePercent="-5"/>
-	</elements>		
+	<defenses armor="10" defense="15"/>
 	<immunities>
 		<immunity invisible="1"/>
 	</immunities>

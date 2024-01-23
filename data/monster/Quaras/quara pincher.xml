@@ -23,9 +23,9 @@
 			<attribute key="areaEffect" value="redshimmer"/>
 		</attack>
 	</attacks>
-	<defenses armor="25" defense="25"/>
+	<defenses armor="18" defense="25"/>
 	<elements>
-		<element physicalPercent="-10"/>
+
 		<element earthPercent="-10"/>
 		<element energyPercent="-25"/>
 	</elements>
@@ -44,15 +44,15 @@
 	<loot>
     <item id="2148" countmax="100" chance="50000" /><!-- gold coin -->
     <item id="2148" countmax="26" chance="50000" /><!-- gold coin -->
-	<item id="2152" countmax="26" chance="20000" /><!-- platinum coin -->
-	<item id="12446" chance="14285" /><!-- quara pincers -->
-	<item id="7591" chance="917" /><!-- great health potion -->
+    <item id="12446" chance="14285" /><!-- quara pincers -->
     <item id="2147" countmax="2" chance="4761" /><!-- small ruby -->
     <item id="2381" chance="4761" /><!-- halberd -->
     <item id="2670" chance="4545" /><!-- shrimp -->
     <item id="5895" chance="1492" /><!-- fish fin -->
     <item id="2475" chance="1136" /><!-- warrior helmet -->
+    <item id="7591" chance="917" /><!-- great health potion -->
     <item id="2487" chance="295" /><!-- crown armor -->
     <item id="7897" chance="82" /><!-- glacier robe -->
+    <item id="13305" chance="49" /><!-- giant shrimp -->
 </loot>
 </monster>
