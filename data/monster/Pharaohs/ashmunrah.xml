@@ -57,8 +57,8 @@
 		<immunity invisible="1"/>
 	</immunities>
 	<summons maxSummons="4">
-		<summon name="Ancient Scarab" interval="1000" chance="10" max="2"/>
-		<summon name="Green Djinn" interval="1000" chance="10" max="2"/>
+		<summon name="Ancient Scarab" interval="1000" chance="2000" max="2"/>
+		<summon name="Green Djinn" interval="1000" chance="1000" max="2"/>
 	</summons>
 	<voices interval="5000" chance="10">
 		<voice sentence="No mortal or undead will steal my secrets!"/>
@@ -68,9 +68,13 @@
 		<item id="2148" countmax="80" chance="50000"/><!-- gold coin -->
 		<item id="2148" countmax="60" chance="50000"/><!-- gold coin -->
 		<item id="2134" chance="7000"/><!-- silver brooch -->
-		<item id="7590" chance="1500"/><!-- great mana potion -->
-		<item id="2164" chance="1000"/><!-- might ring -->
-		<item id="2487" chance="80000"/><!-- crown armor-->
-		<item id="2140" chance="400"/><!-- holy scarab -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="7590" chance="1500"/><!-- great mana potion -->
+				<item id="2164" chance="1000"/><!-- might ring -->
+				<item id="2487" chance="80000"/><!-- crown armor-->
+				<item id="2140" chance="400"/><!-- holy scarab -->
+			</inside>
+		</item>
 	</loot>
 </monster>

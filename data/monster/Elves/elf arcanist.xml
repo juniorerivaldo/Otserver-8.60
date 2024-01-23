@@ -57,7 +57,7 @@
 		<item id="1949" chance="31000"/><!-- scroll -->
 		<item id="2260" chance="16000"/><!-- blank rune -->
 		<item id="2401" chance="11500"/><!-- staff -->
-		<item id="2642" chance="13500"/><!-- sandals -->
+		<item id="2642" chance="135000"/><!-- sandals -->
 		<item id="2682" chance="19000"/><!-- melon -->
 		<item id="2689" chance="14000"/><!-- bread -->
 		<item id="2652" chance="7250"/><!-- green tunic -->
@@ -66,12 +66,15 @@
 		<item id="2600" chance="11750"/><!-- inkwell -->
 		<item id="2802" chance="4250"/><!-- sling herb -->
 		<item id="2047" chance="22000"/><!-- candlestick-->
-		<item id="2198" chance="1666"/><!-- elven amulet -->
+			<item id="1987" chance="100000"><!-- bag -->
+			<inside>
 		<item id="5922" countmax="2" chance="1500"/><!-- holy orchid -->
 		<item id="7589" chance="3500"/><!-- strong mana potion -->
 		<item id="7618" chance="3500"/><!-- health potion -->
 		<item id="2189" chance="400"/><!-- wand of cosmic energy -->
 		<item id="2177" chance="950"/><!-- life crystal -->
 		<item id="2154" chance="375"/><!-- yellow gem -->
+			</inside>
+		</item>
 	</loot>
 </monster>

@@ -29,10 +29,10 @@
 		</defense>
 	</defenses>
 	<elements>
-		<element energyPercent="20"/>
-		<element holyPercent="10"/>
-		<element earthPercent="-10"/>
-		<element deathPercent="-10"/>
+		<element energyPercent="1"/>
+		<element holyPercent="1"/>
+		<element earthPercent="-1"/>
+		<element deathPercent="-1"/>
 	</elements>
 	<immunities>
 		<immunity invisible="1"/>
@@ -41,11 +41,19 @@
 		<voice sentence="Grrrrrr"/>
 	</voices>
 	<loot>
-		<item id="2666" chance="24300"/> <!-- meat -->
-		<item id="2148" countmax="89" chance="7225"/> <!-- gold coin -->
-		<item id="2456" chance="4625"/> <!-- bow -->
-		<item id="2425" chance="1075"/> <!-- obsidian lance -->
-		<item id="11324" chance="9475"/> <!-- shaggy tail -->
-		<item id="11113" chance="4150"/> <!-- orc tooth -->
-	</loot>
+		<item id="2148" countmax="45" chance="7500"/><!-- gold coin -->
+		<item id="2148" countmax="40" chance="7500"/><!-- gold coin -->
+		<item id="2666" countmax="2" chance="16250"/><!-- meat -->
+		<item id="2428" chance="23250"/><!-- orcish axe -->
+		<item id="2456" chance="6000"/><!-- bow -->
+		<item id="1987" chance="100000"><!-- bag -->
+		<inside>
+		<item id="2455" chance="5000"/><!-- crossbow -->
+		<item id="2425" chance="4500"/><!-- obsidian lance -->
+		<item id="11318" chance="9500"/><!-- shaggy tail -->
+		<item id="11109" chance="5000"/><!-- orc tooth -->
+		<item id="8857" chance="500"/><!-- silkweaver bow -->
+		</inside>
+	</item>
+</loot>
 </monster>
