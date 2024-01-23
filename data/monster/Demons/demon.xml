@@ -49,7 +49,7 @@
 	</elements>
 	<immunities>
 		<immunity fire="1"/>
-		<immunity down="1"/>
+		<!-- <immunity down="1"/> -->
 		<immunity lifedrain="1"/>
 		<immunity paralyze="1"/>
 		<immunity invisible="1"/>
