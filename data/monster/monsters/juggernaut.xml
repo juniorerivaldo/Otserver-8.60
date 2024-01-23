@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Juggernaut" nameDescription="a juggernaut" race="blood" experience="9500" speed="290">
+	<health now="7500" max="7500" />
+	<look type="244" corpse="6336" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="1" />
+		<flag staticattack="60" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-1170" />
+		<attack name="physical" interval="2000" chance="15" range="7" min="0" max="-1180">
+			<attribute key="shootEffect" value="largerock" />
+		</attack>
+	</attacks>
+	<defenses armor="60" defense="60">
+		<defense name="speed" interval="2000" chance="15" speedchange="1520" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+		<defense name="healing" interval="2000" chance="15" min="400" max="900">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="40" />
+		<element firePercent="30" />
+		<element icePercent="10" />
+		<element earthPercent="20" />
+		<element energyPercent="-10" />
+		<element holyPercent="-5" />
+	</elements>
+	<immunities>
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="RAAARRR!" />
+		<voice sentence="GRRRRRR!" />
+		<voice sentence="WAHHHH!" />
+	</voices>
+	<loot>
+		<item name="platinum coin" countmax="71" chance="100000" />
+		<item name="demonic essence" countmax="5" chance="95000" />
+		<item id="6300" chance="55000" /><!-- death ring -->
+		<item name="demon horn" countmax="2" chance="50000" />
+		<item name="great mana potion" chance="33333" />
+		<item name="ring of healing" chance="27000" />
+		<item name="ultimate health potion" chance="27000" />
+		<item name="great health potion" chance="27000" />
+		<item name="giant sword" chance="600" />
+		<item name="demon shield" chance="600" />
+		<item name="talon" countmax="5" chance="20000" />
+		<item name="protection amulet" chance="16000" />
+		<item name="purple tome" chance="16000" />
+		<item name="crystal necklace" chance="16000" />
+		<item name="two handed sword" chance="16000" />
+		<item name="boots of haste" chance="600" />
+		<item name="silver amulet" chance="16000" />
+		<item name="golden mug" chance="12500" />
+		<item name="orb" chance="12500" />
+		<item name="great spirit potion" chance="12500" />
+		<item name="life crystal" chance="12500" />
+		<item name="fire axe" chance="1200" />
+		<item name="golden legs" chance="500" />
+		<item name="stone skin amulet" chance="1500" />
+		<item name="platinum amulet" chance="12500" />
+		<item name="mastermind shield" chance="400" />
+		<item name="Orshabaal's brain" chance="6666" />
+		<item name="silver dagger" chance="6666" />
+		<item name="magic plate armor" chance="506" />
+		<item id="2142" chance="500" /><!-- ancient amulet -->
+	</loot>
+</monster>

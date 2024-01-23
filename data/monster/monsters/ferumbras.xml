@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ferumbras" nameDescription="Ferumbras" race="venom" experience="15000" speed="320">
+	<health now="9500" max="9500" />
+	<look type="229" corpse="6078" />
+	<targetchange interval="5000" chance="8" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="0" />
+		<flag convinceable="0" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag canpushcreatures="1" />
+		<flag targetdistance="4" />
+		<flag staticattack="90" />
+		<flag runonhealth="400" />
+		<flag canwalkonenergy="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="0" max="-350" />
+		<attack name="manadrain" interval="2000" chance="20" range="7" min="-300" max="-500">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="earth" interval="3000" chance="20" radius="6" target="0" min="-250" max="-450">
+			<attribute key="areaEffect" value="poison" />
+		</attack>
+		<attack name="energy" interval="2000" chance="18" radius="6" target="0" min="-200" max="-300">
+			<attribute key="areaEffect" value="energy" />
+		</attack>
+		<attack name="manadrain" interval="2000" chance="16" radius="6" target="0" min="-225" max="-375">
+			<attribute key="areaEffect" value="redshimmer" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="21" radius="6" target="0" min="-200" max="-450">
+			<attribute key="areaEffect" value="poff" />
+		</attack>
+		<attack name="effect" interval="3000" chance="20" radius="5" target="0" min="-200" max="-300">
+			<attribute key="areaEffect" value="blackspark" />
+		</attack>
+		<attack name="firecondition" interval="3000" chance="20" range="7" radius="7" target="1" min="-200" max="-500">
+			<attribute key="shootEffect" value="fire" />
+			<attribute key="areaEffect" value="firearea" />
+		</attack>
+		<attack name="lifedrain" interval="2000" chance="25" length="8" spread="0" min="-50" max="-250">
+			<attribute key="areaEffect" value="greenspark" />
+		</attack>
+			</attacks>
+	<defenses armor="25" defense="25">
+		<defense name="healing" interval="2000" chance="10" min="650" max="800">
+			<attribute key="areaEffect" value="blueshimmer" />
+		</defense>
+		<defense name="speed" interval="2000" chance="15" speedchange="800" duration="2000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+		<defense name="invisible" interval="2000" chance="10" duration="1000">
+			<attribute key="areaEffect" value="teleport" />
+		</defense>
+	</defenses>
+	<elements>
+		<element deathPercent="10" />
+		<element earthPercent="50" />
+		<element icePercent="-10" />
+		<element holyPercent="-10" />
+	</elements>
+	<immunities>
+		<immunity fire="1" />
+		<immunity lifedrain="1" />
+		<immunity paralyze="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Muahaha!" />
+		<voice sentence="He he he." />
+	</voices>
+	<loot>
+		<item name="gold coin" countmax="100" chance="97000" />
+		<item name="gold coin" countmax="100" chance="97000" />
+		<item name="gold coin" countmax="70" chance="33000" />
+		<item name="great shield" chance="200" />
+		<item name="golden armor" chance="400" />
+		<item name="golden legs" chance="400" />
+		<item name="spellbook of mind control" chance="400" />
+		<item name="velvet mantle" chance="200" />
+		<item name="demon shield" chance="400" />
+		<item name="divine plate" chance="400" />
+		<item name="magma legs" chance="400" />
+		<item name="tempest shield" chance="400" />
+		<item name="glacier kilt" chance="400" />
+		<item name="lightning legs" chance="400" />
+		<item name="spellbook of dark mysteries" chance="100" />
+		<item name="terra legs" chance="400" />
+		<item name="emerald sword" chance="250" />
+		<item name="havoc blade" chance="400" />
+		<item name="shadow sceptre" chance="400" />
+		<item name="small emerald" countmax="100" chance="600" />
+		<item name="magic plate armor" chance="300" />
+		<item name="mastermind shield" chance="350" />
+		<item name="runed sword" chance="250" />
+		<item name="spellscroll of prophecies" chance="100" />
+		<item name="chaos mace" chance="200" />
+		<item name="small sapphire" countmax="98" chance="1200" />
+		<item name="white pearl" countmax="88" chance="1200" />
+		<item name="haunted blade" chance="200" />
+		<item name="obsidian truncheon" chance="100" />
+		<item name="small amethyst" countmax="54" chance="1000" />
+		<item name="small topaz" countmax="87" chance="1000" />
+		<item name="platinum coin" countmax="58" chance="800" />
+		<item name="berserker" chance="600" />
+		<item name="black pearl" countmax="83" chance="600" />
+		<item name="bloody edge" chance="600" />
+		<item name="red tome" chance="400" />
+		<item name="small diamond" countmax="82" chance="500" />
+		<item name="small ruby" countmax="92" chance="500" />
+	</loot>
+</monster>

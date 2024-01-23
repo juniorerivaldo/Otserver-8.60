@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frost Giant" nameDescription="a frost giant" race="blood" experience="4350" speed="500" manacost="490">
+	<health now="5070" max="5070" />
+	<look type="257" corpse="7330" />
+	<targetchange interval="4000" chance="10" />
+	<flags>
+		<flag summonable="0" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag illusionable="1" />
+		<flag convinceable="1" />
+		<flag pushable="0" />
+		<flag canpushitems="1" />
+		<flag staticattack="80" />
+		<flag targetdistance="1" />
+		<flag runonhealth="0" />
+		<flag canwalkonenergy="0" />
+		<flag canwalkonfire="0" />
+		<flag canwalkonpoison="0" />
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="40" max="-410" />
+		<attack name="physical" interval="2000" chance="15" range="7" min="0" max="-390">
+			<attribute key="shootEffect" value="largerock" />
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="speed" interval="500" chance="50" speedchange="4000" duration="5000">
+			<attribute key="areaEffect" value="redshimmer" />
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity ice="1" />
+		<immunity invisible="1" />
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hmm Humansoup" />
+		<voice sentence="Stand still ya tasy snack!" />
+		<voice sentence="Joh Thun!" />
+		<voice sentence="Brore Smode!" />
+		<voice sentence="Horre Sjan Flan!" />
+		<voice sentence="Forle Bramma!" />
+	</voices>
+	<loot>
+		<item id="1976" chance="8500" /><!-- book (gemmed) -->
+		<item name="golden mug" chance="3000" />
+		<item name="small sapphire" chance="5200" />
+		<item name="gold coin" countmax="100" chance="33000" />
+		<item name="gold coin" countmax="100" chance="33000" />
+		<item name="gold coin" countmax="42" chance="33000" />
+		<item name="energy ring" chance="5000" />
+		<item name="life crystal" chance="520" />
+		<item name="ice rapier" chance="350" />
+		<item name="strange helmet" chance="450" />
+		<item name="dragon scale mail" chance="500" />
+		<item name="royal helmet" chance="610" />
+		<item name="tower shield" chance="840" />
+		<item name="power bolt" countmax="6" chance="6000" />
+		<item name="dragon ham" countmax="5" chance="80370" />
+		<item name="green mushroom" chance="12000" />
+		<item name="golden armor" chance="550" />
+		<item name="dragon slayer" chance="420" />
+		<item id="7441" chance="4000" /><!-- ice cube -->
+	</loot>
+</monster>
