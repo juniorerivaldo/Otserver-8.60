@@ -558,5 +558,8 @@
 	<instant name="House Subowner List" words="aleta som" aggressive="0" script="house/invite_subowners.lua" />
 
 	<!-- Monster Spells -->
+	<instant name="warlock skill reducer" words="###30" aggressive="1" blockwalls="1" needtarget="1" needlearn="1" script="monster/warlock_skill_reducer.lua" />
+	<instant name="dipthrah skill reducer" words="###51" aggressive="1" blockwalls="1" needtarget="0" needlearn="1" script="monster/dipthrah_skill_reducer.lua" />
+
 	<!-- none -->
 </spells>
