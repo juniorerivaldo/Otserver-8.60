@@ -11,9 +11,6 @@
 	<action fromid="1747" toid="1749" script="quests/quests.lua" />
 	<action uniqueid="30015" script="quests/annihilator.lua" />
 
-	<!-- Market -->
-	<action itemid="14405" function="market" />
-
 	<!-- Tools -->
 	<action itemid="2120" script="tools/rope.lua" />
 	<action itemid="2416" script="tools/crowbar.lua" />
