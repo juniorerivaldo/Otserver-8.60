@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Elite Rift Worm" nameDescription="a elite rift worm" race="blood" experience="1000" speed="220" manacost="0">
+	<health now="3500" max="3500"/>
+	<look type="295" corpse="0"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag staticattack="50"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="43" attack="40"/>
+		<attack name="manadrain" interval="5000" chance="13" range="7" min="-50" max="-250"/>
+	</attacks>
+	<defenses armor="28" defense="28">
+		<defense name="invisible" interval="5000" chance="50" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthpercent="-25"/>
+		<element icePercent="-5"/>
+		<element holyPercent="-5"/>
+		<element firePercent="-5"/>
+	</elements>		
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+</monster>

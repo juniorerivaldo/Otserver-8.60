@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frost Giantess" nameDescription="a frost giantess" race="blood" experience="150" speed="195" manacost="490">
+	<health now="275" max="275"/>
+	<look type="265" corpse="7330"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="8"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="30" attack="30"/>
+		<attack name="physical" interval="2000" chance="15" range="7" min="-0" max="-90">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+	</attacks>
+	<defenses armor="20" defense="20">
+		<defense name="speed" interval="50000" chance="15" speedchange="100" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element firePercent="20"/>
+		<element holyPercent="10"/>
+		<element energyPercent="-10"/>
+		<element deathPercent="-3"/>
+	</elements>
+	<immunities>
+		<immunity ice="1"/>
+		</immunities>
+	<voices interval="2000" chance="5">
+		<voice sentence="Hmm Humansoup"/>
+		<voice sentence="Stand still ya tasy snack!"/>
+		<voice sentence="Joh Thun!"/>
+		<voice sentence="Brore Smode!"/>
+		<voice sentence="Horre Sjan Flan!"/>
+		<voice sentence="Forle Bramma!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="40" chance="100000"/><!-- gold coin -->
+		<item id="2406" chance="25000"/><!-- short sword -->
+		<item id="10575" chance="5000"/><!-- frost giant pelt -->
+		<item id="2666" countmax="2" chance="33333"/><!-- meat -->
+		<item id="7441" chance="3444"/><!-- ice cube -->
+		<item id="2513" chance="2500"/><!-- battle shield -->
+		<item id="7618" chance="1666"/><!-- health potion -->
+		<item id="2381" chance="1955"/><!-- halberd -->
+		<item id="7460" chance="2500"/><!-- norse shield -->
+		<item id="2490" chance="2777"/><!-- dark helmet -->
+		<item id="2209" chance="2055"/><!-- club ring -->
+		<item id="7290" chance="1666"/><!-- shard -->
+	</loot>
+</monster>

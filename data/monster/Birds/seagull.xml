@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Seagull" nameDescription="a seagull" race="blood" experience="0" speed="200" manacost="250">
+	<health now="25" max="25"/>
+	<look type="223" corpse="6076"/>
+	<targetchange interval="5000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="11"/>
+		<flag runonhealth="10"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="10" attack="3"/>
+	</attacks>
+	<defenses armor="2" defense="2">
+	<defense name="speed" interval="5000" chance="50" duration="2500" speedchange="100">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+</monster>
