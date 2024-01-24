@@ -11,4 +11,6 @@
 			<missionstate id="5" description="Example description 2" />
 		</mission>
 	</quest>
+	<quest name="TESTE" startstorageid="1241" startstoragevalue="1">
+</quest>
 </quests>
