@@ -15,6 +15,6 @@ jobs:
 
       - name: Conectar à VPS e executar comandos
         run: |
-          ssh -o StrictHostKeyChecking=no -p 4927 devplex@62.72.11.140 'cd /otserver && git pull && ./tfs'
+        sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no -p 4927 devplex@62.72.11.140 'cd /otserver && git pull && ./tfs'
         env:
           PASSWORD: ${{ secrets.SSH_PASSWORD  }}
