@@ -3,18 +3,18 @@ name: Atualizar VPS e Executar Comando
 on:
   push:
     branches:
-      - master  # substitua "main" pelo nome da sua branch principal, se necessário
+      - master # substitua "main" pelo nome da sua branch principal, se necessário
 
 jobs:
   atualizarVPS:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout do código
-      uses: actions/checkout@v2
+      - name: Checkout do código
+        uses: actions/checkout@v2
 
-    - name: Conectar à VPS e executar comandos
-      run: |
-       ssh -o StrictHostKeyChecking=no -p 4927 devplex@62.72.11.140 'cd /otserver && git pull && ./tfs'
-      env:
-        PASSWORD: ${{ secrets.SSH_PASSWORD  }}
+      - name: Conectar à VPS e executar comandos
+        run: |
+          ssh -o StrictHostKeyChecking=no -p 4927 devplex@62.72.11.140 'cd /otserver && git pull && ./tfs'
+        env:
+          PASSWORD: ${{ secrets.SSH_PASSWORD  }}
