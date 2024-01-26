@@ -5,6 +5,9 @@
 		<monster name="Chicken" x="-1" y="1" z="5" spawntime="60" />
 		<monster name="Pig" x="0" y="1" z="5" spawntime="60" />
 	</spawn>
+	<spawn centerx="1034" centery="1029" centerz="5" radius="1">
+		<npc name="Eldric" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
 	<spawn centerx="1076" centery="1029" centerz="5" radius="1">
 		<monster name="Chicken" x="-1" y="-1" z="5" spawntime="60" />
 		<monster name="Pig" x="0" y="-1" z="5" spawntime="60" />
