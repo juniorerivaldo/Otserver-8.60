@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quests>
-	 <quest name="[color=cyan]Quest Do Livro[/color]" startstorageid="[color=darkorange]1009[/color]" startstoragevalue="1">
-       <mission name="Recompensa" storageid="[color=red]1009[/color]" startvalue="1" endvalue="1">
-           <missionstate id="1" description="[color=lime]Voce lutou e mereceu sua recompensa!.[/color]"/>
-       </mission>
-   </quest>
-	<quest name="RatQuest" event="Kill" interval="1">
-    <storage name="RatQuestStatus" value="0"/>
-    <level required="1"/>
-    <group name="RatGroup">
-        <monster name="Rat" count="5" storage="RatQuestStatus" />
-    </group>
-    <reward>
-        <exp value="1000"/>
-        <item id="2148" count="50"/> <!-- Adicione a recompensa desejada -->
-    </reward>
-</quest>
-</quest>
+	<quest name="The dugeon quest" startstorageid="1000" startstoragevalue="1">
+		<mission name="Sam" storageid="1000" startvalue="2" endvalue="3">
+
+			<missionstate id="2" description="Voce ja deu halberd a ele!" />
+
+			<missionstate id="3" description="Voce termino a missao!" />
+
+		</mission>
+
+		<mission name="Vamos ao herbert" storageid="1001" startvalue="1" endvalue="2">
+
+			<missionstate id="1" description="ganhou a carta!" />
+
+			<missionstate id="2" description="Va ao bau!" />
+
+
+
+		</mission>
+
+		<mission name="bau da morte" storageid="1002" startvalue="1" endvalue="2">
+
+			<missionstate id="1" description="Você chegou no bau!" />
+
+			<missionstate id="2" description="Parabens acabou!" />
+
+		</mission>
+
+	</quest>
 </quests>
