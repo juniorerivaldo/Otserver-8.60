@@ -1,29 +1,39 @@
--- Script do NPC
+local storage = 20001
 
-function onCreatureAppear(cid) -- Chamado quando o jogador se aproxima do NPC
-    -- Verifica se o jogador tem o storageid 1000 igual a 0 (ainda não iniciou a conversa)
-    if getPlayerStorageValue(cid, 1000) == 0 then
-        doPlayerSetStorageValue(cid, 1000, 1) -- Define o storageid 1000 para 1
-        doCreatureSay(cid, "Bem-vindo! Seu storageid foi definido para 1.", TALKTYPE_SAY)
-    else
-        doCreatureSay(cid, "Olá novamente! Seu storageid já foi iniciado.", TALKTYPE_SAY)
-    end
-end
+function creatureSayCallback(cid, type, msg)
+     if not npcHandler:isFocused(cid) then
+         return false
+     end
 
-function onCreatureDisappear(cid) -- Chamado quando o jogador se afasta do NPC
-    -- Pode ser utilizado para realizar ações quando o jogador se afasta, se necessário
-end
+     local talkUser = NPCHANDLER_CONVBEHAVIOR == CONVERSATION_DEFAULT and 0 or cid
 
-function onCreatureSay(cid, type, msg) -- Chamado quando o jogador fala com o NPC
-    if msg == "finalizar" then
-        doPlayerSetStorageValue(cid, 1000, 2) -- Define o storageid 1000 para 2
-        doCreatureSay(cid, "Conversa finalizada. Seu storageid foi alterado para 2.", TALKTYPE_SAY)
-    elseif msg == "adeus" then
-        doPlayerSetStorageValue(cid, 1000, 3) -- Define o storageid 1000 para 3
-        doCreatureSay(cid, "Até logo! Seu storageid foi alterado para 3.", TALKTYPE_SAY)
-    end
-end
-
-function onCreatureChangeOutfit(cid) -- Chamado quando o jogador muda de aparência
-    -- Pode ser utilizado para realizar ações quando o jogador muda de aparência, se necessário
+     if msgcontains(msg, "mission") then
+         if getPlayerStorageValue(cid, storage) == -1 then
+             selfSay("My wife lost her ring while swimming in the town swimming area. Do you think you can help me find it?", cid)
+             talkState[talkUser] = 1
+         elseif getPlayerStorageValue(cid, storage) == 1 then
+             selfSay("Did you find the ring?", cid)
+             talkState[talkUser] = 1
+         else
+             selfSay("Thanks again for finding the ring.", cid)
+         end
+     elseif msgcontains(msg, "yes") and talkState[talkUser] == 1 then
+         if getPlayerStorageValue(cid, storage) == -1 then
+             selfSay("Great! I saw a water vortex. Maybe you should check near that first.", cid)
+             setPlayerStorageValue(cid, storage, 1)
+         else
+             if(doPlayerRemoveItem(cid, 24333, 1)) then
+                 selfSay("That's great, my wife will be really happy, thanks.", cid)
+                 doPlayerAddItem(cid, 2148, 300)
+                 setPlayerStorageValue(cid, storage, 2)
+             else
+                 selfSay("You don't have it.", cid)
+             end
+         end
+         talkState[talkUser] = 0
+     elseif msgcontains(msg, "no") and talkState[talkUser] == 1 then
+         selfSay("Ok then.", cid)
+         talkState[talkUser] = 0
+     end
+     return true
 end
