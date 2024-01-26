@@ -21,7 +21,7 @@ jobs:
           sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no -p 4927 devplex@62.72.11.140 '{
             cd otserver &&
             git pull &&
-            ./tfs
+            sh restart.sh
           } || exit 0'
         env:
           PASSWORD: ${{ secrets.SSH_PASSWORD }}
