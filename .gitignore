@@ -12,6 +12,7 @@
 .idea/
 .vscode/
 .vs/
+*.github/
 
 # Build results
 

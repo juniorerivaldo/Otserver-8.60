@@ -3,7 +3,10 @@ name: Atualizar VPS e Executar Comando
 on:
   push:
     branches:
-      - master # substitua "main" pelo nome da sua branch principal, se necessário
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   atualizarVPS:
@@ -15,6 +18,10 @@ jobs:
 
       - name: Conectar à VPS e executar comandos
         run: |
-          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no -p 4927 devplex@62.72.11.140 'cd otserver && git pull && ./tfs  && exit'
+          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no -p 4927 devplex@62.72.11.140 '{
+            cd otserver &&
+            git pull &&
+            ./tfs
+          } || exit 0'
         env:
-          PASSWORD: ${{ secrets.SSH_PASSWORD  }}
+          PASSWORD: ${{ secrets.SSH_PASSWORD }}
