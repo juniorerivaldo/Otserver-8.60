@@ -18,11 +18,10 @@ jobs:
 
       - name: Conectar à VPS e executar comandos
         run: |
-          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no -p 4927 devplex@62.72.11.140 '{
+          sshpass -p ${{ secrets.SSH_PASSWORD }} ssh -o StrictHostKeyChecking=no -p 4927 devplex@62.72.11.140 'bash -s' << 'ENDSSH'
             cd otserver &&
             git pull &&
-            screen &&
-            ./restart.sh
-          } || exit 0'
+            screen -d -m -S minha_sessao ./restart.sh
+          ENDSSH
         env:
           PASSWORD: ${{ secrets.SSH_PASSWORD }}
