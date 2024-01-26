@@ -17,7 +17,8 @@ PlayerStorageKeys = {
 
 TibiaTales = {
         TheExterminator = 3939,
-    }
+    },
+    Rotworms = 3940
     }
 
 GlobalStorageKeys = {
