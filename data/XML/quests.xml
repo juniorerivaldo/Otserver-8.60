@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quests>
-<quest name="The Lost Ring" startstorageid="20001" startstoragevalue="1">
-    <mission name="Finding the Ring" storageid="20001" startvalue="1" endvalue="2">
-        <missionstate id="1" description="You are trying to help find a lost ring" />
-        <missionstate id="2" description="You found the ring. You should return to the NPC." />
-    </mission>
-</quest>
+    <quest name="Padreia" startstorageid="3939" startstoragevalue="1">
+        <mission name="The Exterminator" storageid="3939" startvalue="1" endvalue="3">
+            <missionstate id="1" description="Padreia in Carlin asked you to exterminate the slimes in the sewers of Carlin by poisoning their spawn pool." />
+            <missionstate id="2" description="You poisoned the spawn pool of the slimes in the sewers of Carlin. Report to Padreia about your mission." />
+            <missionstate id="3" description="You successfully helped Padreia in saving Carlin from a slimy disease." />
+        </mission>
+    </quest>
 </quests>

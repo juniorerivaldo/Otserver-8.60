@@ -5,16 +5,20 @@ Reserved storage ranges:
 - 10000000 to 20000000 reserved for outfits and mounts on source
 ]]--
 PlayerStorageKeys = {
-	annihilatorReward = 30015,
-	promotion = 30018,
-	delayLargeSeaShell = 30019,
-	firstRod = 30020,
-	delayWallMirror = 30021,
-	madSheepSummon = 30023,
-	crateUsable = 30024,
-	achievementsBase = 300000,
-	achievementsCounter = 20000,
-}
+    annihilatorReward = 30015,
+    promotion = 30018,
+    delayLargeSeaShell = 30019,
+    firstRod = 30020,
+    delayWallMirror = 30021,
+    madSheepSummon = 30023,
+    crateUsable = 30024,
+    achievementsBase = 300000,
+    achievementsCounter = 20000,
+
+TibiaTales = {
+        TheExterminator = 3939,
+    }
+    }
 
 GlobalStorageKeys = {
 }
