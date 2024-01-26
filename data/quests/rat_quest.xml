@@ -1,0 +1,11 @@
+<quest name="RatQuest" event="Kill" interval="1">
+    <storage name="RatQuestStatus" value="0"/>
+    <level required="1"/>
+    <group name="RatGroup">
+        <monster name="Rat" count="5" storage="RatQuestStatus" />
+    </group>
+    <reward>
+        <exp value="1000"/>
+        <item id="2148" count="50"/> <!-- Adicione a recompensa desejada -->
+    </reward>
+</quest>
