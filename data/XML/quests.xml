@@ -7,11 +7,11 @@
             <missionstate id="3" description="You successfully helped Padreia in saving Carlin from a slimy disease." />
         </mission>
     </quest>
-        <quest name="Rotworms Attack" startstorageid="3940" startstoragevalue="1">
-        <mission name="The Exterminator" storageid="3939" startvalue="1" endvalue="3">
-            <missionstate id="1" description="Padreia in Carlin asked you to exterminate the slimes in the sewers of Carlin by poisoning their spawn pool." />
-            <missionstate id="2" description="You poisoned the spawn pool of the slimes in the sewers of Carlin. Report to Padreia about your mission." />
-            <missionstate id="3" description="You successfully helped Padreia in saving Carlin from a slimy disease." />
+        <quest name="Teste" startstorageid="3940" startstoragevalue="1">
+        <mission name="teste" storageid="3939" startvalue="1" endvalue="3">
+            <missionstate id="1" description="inicio" />
+            <missionstate id="2" description="pegou o item." />
+            <missionstate id="3" description="terminou a quest" />
         </mission>
     </quest>
 </quests>
