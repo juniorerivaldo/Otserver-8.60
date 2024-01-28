@@ -35,7 +35,7 @@ local function creatureSayCallback(cid, type, msg)
                 'volte com minha nota o mais rapido possivel.',
                 cid)
         end
-    elseif npcHandler.topic[cid] == 2 then
+    if npcHandler.topic[cid] == 2 then
         player:addItem(2087, 1)
         player:setStorageValue(PlayerStorageKeys.Quests.notasDeEldric, 1)
         npcHandler:say({
