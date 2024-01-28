@@ -1,43 +1,51 @@
--- data/npc/scripts/npcname.lua
+local keywordHandler = KeywordHandler:new()
+local npcHandler = NpcHandler:new(keywordHandler)
+NpcSystem.parseParameters(npcHandler)
 
-local PlayerStorageKeys = {
-    teste = 3940, -- Substitua 1000 pelo valor desejado
-    -- Adicione outras chaves conforme necessário
-}
+function onCreatureAppear(cid) npcHandler:onCreatureAppear(cid) end
+function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end
+function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end
+function onThink() npcHandler:onThink() end
 
-function onCreatureAppear(cid)
-    if isPlayer(cid) then
-        doCreatureSay(cid, "Olá, acho que você pode me ajudar. Quer uma missão?", TALKTYPE_PRIVATE)
-    end
-end
+local function creatureSayCallback(cid, type, msg)
+    if not npcHandler:isFocused(cid) then return false end
 
-function onCreatureDisappear(cid) end
+    local player = Player(cid)
 
-function onCreatureSay(cid, type, msg)
-    if isPlayer(cid) then
-        if msg:lower() == 'yes' or msg:lower() == 'mission' then
-            if getPlayerStorageValue(cid, PlayerStorageKeys.teste) == 0 then
-                doCreatureSay(cid, "Ótimo! Aqui está sua missão. Traga-me o item especial.", TALKTYPE_PRIVATE)
-                setPlayerStorageValue(cid, PlayerStorageKeys.teste, 1)
-            elseif getPlayerStorageValue(cid, PlayerStorageKeys.teste) == 2 then
-                local itemID = 2347 -- Substitua 1234 pelo ID do item necessário
-                local itemCount = getPlayerItemCount(cid, itemID)
-                
-                if itemCount > 0 then
-                    doPlayerRemoveItem(cid, itemID, itemCount)
-                    doCreatureSay(cid, "Muito obrigado! Você conseguiu o item. Sua missão está completa.", TALKTYPE_PRIVATE)
-                    setPlayerStorageValue(cid, PlayerStorageKeys.teste, 3)
-                else
-                    doCreatureSay(cid, "Você ainda não conseguiu o item. Continue procurando!", TALKTYPE_PRIVATE)
-                end
-            elseif getPlayerStorageValue(cid, PlayerStorageKeys.teste) == 3 then
-                doCreatureSay(cid, "Você já completou sua missão. Muito obrigado!", TALKTYPE_PRIVATE)
+    npcHandler.topic[cid] = 1
+    if msgcontains(msg, 'mission') then
+        if player:getStorageValue(PlayerStorageKeys.TibiaTales.teste) == -1 then
+            npcHandler:say({
+                'Ótimo! Aqui está sua missão. Traga-me o item especial.'
+            }, cid)
+            npcHandler.topic[cid] = 2
+        elseif player:getStorageValue(PlayerStorageKeys.TibiaTales.teste) == 1 then
+            npcHandler:say(
+                'Você ainda não conseguiu o item. Continue procurando!', cid)
+        elseif player:getStorageValue(PlayerStorageKeys.TibiaTales.teste) == 2 then
+            local itemID = 2347
+            local itemCount = getPlayerItemCount(cid, itemID)
+
+            if itemCount > 0 then
+                doPlayerRemoveItem(cid, itemID, itemCount)
+                player:setStorageValue(PlayerStorageKeys.TibiaTales.teste, 3)
+                npcHandler:say('Voce conseguiu o item. Obrigado.', cid)
+            else
+                npcHandler:say(
+                    'Você não possui o item necessário. Continue procurando!',
+                    cid)
             end
         else
-            doCreatureSay(cid, "Ah, talvez outra hora então.", TALKTYPE_PRIVATE)
+            npcHandler:say(
+                'Você não está atualmente em uma missão válida.', cid)
         end
     end
 end
 
-function onCreatureChangeOutfit(cid) end
-function onThink() end
+npcHandler:setMessage(MESSAGE_GREET,
+                      "Welcome to our humble guild, wanderer. May I be of any assistance to you?")
+npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell.")
+npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell.")
+
+npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
+npcHandler:addModule(FocusModule:new())
