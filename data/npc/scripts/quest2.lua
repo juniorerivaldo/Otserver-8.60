@@ -12,7 +12,6 @@ local function creatureSayCallback(cid, type, msg)
 
     local player = Player(cid)
 
-    npcHandler.topic[cid] = 1
     if msgcontains(msg, 'mission') then
         if player:getStorageValue(PlayerStorageKeys.TibiaTales.teste) == -1 then
             npcHandler:say({
@@ -40,10 +39,8 @@ local function creatureSayCallback(cid, type, msg)
                 'Você não está atualmente em uma missão válida.', cid)
         end
 
-        if npcHandler.topic[cid] == 1 then
-            -- Descomente a linha abaixo se desejar adicionar um item
-            -- player:addItem(8205, 1)
-            player:setStorageValue(PlayerStorageKeys.TibiaTales.teste, 1)
+        if npcHandler.topic[cid] == 2 then
+            player:setStorageValue(PlayerStorageKeys.TibiaTales.teste, 2)
             npcHandler:say({
                 'Eu sabia que podia contar com você. Tome este veneno para pragas altamente intensificado. Na minha visão, vi uma espécie de \'poça\' de onde essas criaturas surgiam. ...',
                 'Derrame o veneno na água para impedir o declínio de Carlin. Fale comigo sobre sua missão depois de cumprir sua tarefa.'
