@@ -1,4 +1,4 @@
-<npc name="Eldric" script="quest2.lua" walkinterval="0" speechbubble="3">
+<npc name="Eldric" script="eldric.lua" walkinterval="0" speechbubble="3">
 	<health now="100" max="100"/>
 	<look type="129" head="95" body="116" legs="121" feet="115" addons="3"/>
 	<parameters>

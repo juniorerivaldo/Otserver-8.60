@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quests>
-    <quest name="Padreia" startstorageid="3939" startstoragevalue="1">
-        <mission name="The Exterminator" storageid="3939" startvalue="1" endvalue="3">
-            <missionstate id="1" description="Padreia in Carlin asked you to exterminate the slimes in the sewers of Carlin by poisoning their spawn pool." />
-            <missionstate id="2" description="You poisoned the spawn pool of the slimes in the sewers of Carlin. Report to Padreia about your mission." />
-            <missionstate id="3" description="You successfully helped Padreia in saving Carlin from a slimy disease." />
-        </mission>
-    </quest>
-        <quest name="Teste" startstorageid="3940" startstoragevalue="1">
-        <mission name="teste" storageid="3939" startvalue="1" endvalue="3">
-            <missionstate id="1" description="inicio" />
-            <missionstate id="2" description="pegou o item." />
-            <missionstate id="3" description="terminou a quest" />
+    <quest name="Notas de Eldric" startstorageid="3940" startstoragevalue="1">
+        <mission name="As Notas de Eldric" storageid="3939" startvalue="1" endvalue="3">
+            <missionstate id="1" description="Desça até o covil do mago e entre em seus aposentos, recupere minhas notas roubadas." />
+            <missionstate id="2" description="Você recuperou as notas de Eldric, retorne até ele para buscar sua recompensa." />
+            <missionstate id="3" description="Você ajudou com sucesso Eldric em sua primeira missão !" />
         </mission>
     </quest>
 </quests>

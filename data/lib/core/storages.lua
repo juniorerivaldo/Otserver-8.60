@@ -15,9 +15,11 @@ PlayerStorageKeys = {
     achievementsBase = 300000,
     achievementsCounter = 20000,
 
-TibiaTales = {
-        TheExterminator = 3939,
-        teste = 3940
+Quests = {
+        notasDeEldric = 3939, -- primeira quest em astória
+        teste = 3940,
+        goldenClub = 223344
+
     },
     
     }
