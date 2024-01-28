@@ -29,7 +29,7 @@ local function creatureSayCallback(cid, type, msg)
             if itemCount > 0 then
                 doPlayerRemoveItem(cid, itemID, itemCount)
                 player:setStorageValue(PlayerStorageKeys.TibiaTales.teste, 3)
-                npcHandler:say('Voce conseguiu o item. Obrigado.', cid)
+                npcHandler:say('Você conseguiu o item. Obrigado.', cid)
             else
                 npcHandler:say(
                     'Você não possui o item necessário. Continue procurando!',
@@ -39,11 +39,21 @@ local function creatureSayCallback(cid, type, msg)
             npcHandler:say(
                 'Você não está atualmente em uma missão válida.', cid)
         end
+
+        if npcHandler.topic[cid] == 1 then
+            -- Descomente a linha abaixo se desejar adicionar um item
+            -- player:addItem(8205, 1)
+            player:setStorageValue(PlayerStorageKeys.TibiaTales.teste, 1)
+            npcHandler:say({
+                'Eu sabia que podia contar com você. Tome este veneno para pragas altamente intensificado. Na minha visão, vi uma espécie de \'poça\' de onde essas criaturas surgiam. ...',
+                'Derrame o veneno na água para impedir o declínio de Carlin. Fale comigo sobre sua missão depois de cumprir sua tarefa.'
+            }, cid)
+        end
     end
 end
 
 npcHandler:setMessage(MESSAGE_GREET,
-                      "Welcome to our humble guild, wanderer. May I be of any assistance to you?")
+                      "Olá nobre, diga 'mission' para iniciar?")
 npcHandler:setMessage(MESSAGE_FAREWELL, "Farewell.")
 npcHandler:setMessage(MESSAGE_WALKAWAY, "Farewell.")
 
