@@ -13,6 +13,7 @@
 
 	<!-- Quest Doors -->
 	<action itemid="2087" script="other/keyttaquest.lua" />
+	<!--  -->
 
 	<!-- Tools -->
 	<action itemid="2120" script="tools/rope.lua" />
