@@ -12,7 +12,7 @@
 	<action uniqueid="30015" script="quests/annihilator.lua" />
 
 	<!-- Quest Doors -->
-	<action itemid="2087" script="other/keyttaquest.lua" />
+	<action itemid="2087" script="other/doorkey.lua" />
 	<!--  -->
 
 	<!-- Tools -->
