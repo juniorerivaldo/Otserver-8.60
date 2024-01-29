@@ -17,9 +17,6 @@ PlayerStorageKeys = {
 
 Quests = {
         notasDeEldric = 3939, -- primeira quest em astória
-        teste = 3940,
-        goldenClub = 223344
-
     },
     
     }
