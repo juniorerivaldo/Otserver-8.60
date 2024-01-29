@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quests>
-    <quest name="Notas de Eldric" startstorageid="3940" startstoragevalue="1">
+    <quest name="Notas de Eldric" startstorageid="3939" startstoragevalue="1">
         <mission name="As Notas de Eldric" storageid="3939" startvalue="1" endvalue="3">
             <missionstate id="1" description="Desça até o covil do mago e entre em seus aposentos, recupere minhas notas roubadas." />
             <missionstate id="2" description="Você recuperou as notas de Eldric, retorne até ele para buscar sua recompensa." />
