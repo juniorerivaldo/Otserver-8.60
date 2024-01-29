@@ -1,6 +1,6 @@
 function onUse(cid, item, frompos, item2, topos)
-    portafechada = 5101 -- coloque aqui o id da porta fechada
-    portaaberta = 5102 -- coloque aqui o id da porta aberta
+    portafechada = 5099 -- coloque aqui o id da porta fechada
+    portaaberta = 5100 -- coloque aqui o id da porta aberta
     idkey = 2087 -- coloque aqui o id da key
     
     if item.itemid == idkey then
