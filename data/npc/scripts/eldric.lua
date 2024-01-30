@@ -4,10 +4,10 @@ local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
 
-function onCreatureAppear(cid) npcHandler:onCreatureAppear(cid) end
-function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end
-function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end
-function onThink() npcHandler:onThink() end
+function onCreatureAppear(cid)              npcHandler:onCreatureAppear(cid)            end
+function onCreatureDisappear(cid)           npcHandler:onCreatureDisappear(cid)         end
+function onCreatureSay(cid, type, msg)      npcHandler:onCreatureSay(cid, type, msg)    end
+function onThink()                          npcHandler:onThink()                        end
 
 local function greetCallback(cid)
     npcHandler.topic[cid] = 0
@@ -15,20 +15,20 @@ local function greetCallback(cid)
 end
 
 local function creatureSayCallback(cid, type, msg)
-    if not npcHandler:isFocused(cid) then return false end
-
+    if not npcHandler:isFocused(cid) then
+        return false
+    end
+  
     local player = Player(cid)
 
-    if msgcontains(msg, "ajudar") then
-        local storageValue = player:getStorageValue(
-                                 PlayerStorageKeys.Quests.eldricNotes)
-        if storageValue == -1 then
+    if msgcontains(msg, "quest") then
+        local storageValue = player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes)
+        if storageValue < 0 then
             npcHandler:say("Would you like to start this quest?", cid)
-            print(storageValue)
-            npcHandler.topic[cid] = 0
+            npcHandler.topic[cid] = 1
             return true
-        elseif storageValue == 1 then
-            npcHandler:say("voce completou a quest", cid)
+        elseif storageValue == 0 then
+            npcHandler:say("Would you like to complete this quest?", cid)
             npcHandler.topic[cid] = 1
             return true
         else
@@ -36,31 +36,25 @@ local function creatureSayCallback(cid, type, msg)
             npcHandler.topic[cid] = 0
             return true
         end
-
+      
     elseif npcHandler.topic[cid] == 1 then
         if not msgcontains(msg, "yes") then
             npcHandler:say("Another time then.", cid)
             npcHandler.topic[cid] = 0
             return true
         end
-        if msgcontains(msg, "yes") then
-            npcHandler:say("Otimo.", cid)
+        if player:getStorageValue(storage) < 0 then
             player:setStorageValue(storage, 0)
-            npcHandler.topic[cid] = 0
-            return true
-        end
-        if player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes) < 1 then
-            player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes, 0)
             npcHandler:say("Cool. You have started the quest.", cid)
+            player.addItem(2087,1)
             npcHandler.topic[cid] = 0
-            player.addItem(2087, 1)
             return true
         end
         player:setStorageValue(storage, 2)
         npcHandler:say("Awesome. You have finished the quest.", cid)
         npcHandler.topic[cid] = 0
         return true
-
+      
     end
     return true
 end
