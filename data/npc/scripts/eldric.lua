@@ -16,7 +16,7 @@ local function creatureSayCallback(cid, type, msg)
     if msgcontains(msg, missionKeyword) then
         local questValue = player:getStorageValue(
                                PlayerStorageKeys.Quests.eldricNotes)
-
+        print(questValue,'VALOR DA QUEST ****')
         if questValue == -1 then
             npcHandler:say({
                 'Oh, obrigado deuses por encontrar esse aventureiro. ...',
