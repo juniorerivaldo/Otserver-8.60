@@ -13,20 +13,20 @@ local function creatureSayCallback(cid, type, msg)
     local player = Player(cid)
 
     if msgcontains(msg, 'mission') then
-        if player:getStorageValue(PlayerStorageKeys.Quests.notasDeEldric) == -1 then
+        if player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes) == -1 then
             npcHandler:say({
                 'Oh, obrigado deuses por encontrar esse aventureiro. ...',
                 'preciso de sua ajuda para resgatar minhas notas que foram roubadas pelo mago!'
             }, cid)
             npcHandler.topic[cid] = 2
-        elseif player:getStorageValue(PlayerStorageKeys.Quests.notasDeEldric) == 1 then
+        elseif player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes) == 1 then
             npcHandler:say(
                 'va até o subsolo e encontre o covil do mago, e me traga a minha nota que esta escondida la.',
                 cid)
-        elseif player:getStorageValue(PlayerStorageKeys.Quests.notasDeEldric) == 2 then
+        elseif player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes) == 2 then
             local itemId = {2150, 2149, 2147, 2146}
             for i = 1, #itemId do player:addItem(itemId[i], 1) end
-            player:setStorageValue(PlayerStorageKeys.Quests.notasDeEldric, 3)
+            player:setStorageValue(PlayerStorageKeys.Quests.eldricNotes, 3)
             npcHandler:say(
                 'voce conseguiu achar minha nota, muito obrigado nobre aventureiro!',
                 cid)
@@ -36,7 +36,7 @@ local function creatureSayCallback(cid, type, msg)
 
         -- Move this block outside the condition
         player:addItem(2087, 1)
-        player:setStorageValue(PlayerStorageKeys.Quests.notasDeEldric, 1)
+        player:setStorageValue(PlayerStorageKeys.Quests.eldricNotes, 1)
         npcHandler:say({
             'PEGUE esta chave para acessar os aposentos do mago.'
         }, cid)

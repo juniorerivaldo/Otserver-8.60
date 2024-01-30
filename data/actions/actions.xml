@@ -10,6 +10,7 @@
 	<action itemid="1740" script="quests/quests.lua" />
 	<action fromid="1747" toid="1749" script="quests/quests.lua" />
 	<action uniqueid="30015" script="quests/annihilator.lua" />
+	<action uniqueid="30016" script="quests/eldric_notes.lua" />
 
 	<!-- Quest Doors -->
 	<action itemid="2087" script="other/doorkey.lua" />

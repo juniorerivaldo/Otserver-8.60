@@ -1,3 +1,5 @@
+--  este script abre todas as portas 5098 com a chave 2087
+
 function onUse(cid, item, frompos, item2, topos)
     portafechada = 5098 -- coloque aqui o id da porta fechada
     portaaberta = 5100-- coloque aqui o id da porta aberta
