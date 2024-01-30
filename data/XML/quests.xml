@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quests>
-    <quest name="Notas de Eldric" startstorageid="3939" startstoragevalue="1">
-        <mission name="As Notas de Eldric" storageid="3939" startvalue="1" endvalue="3">
-            <missionstate id="1" description="Desça até o covil do mago e entre em seus aposentos, recupere minhas notas roubadas." />
-            <missionstate id="2" description="Você recuperou as notas de Eldric, retorne até ele para buscar sua recompensa." />
-            <missionstate id="3" description="Você ajudou com sucesso Eldric em sua primeira missão !" />
+    <quest name="Notas de Eldric" startstorageid="80012" startstoragevalue="1">
+        <mission name="As Notas de Eldric" storageid="3939" startvalue="0" endvalue="2">
+            <missionstate id="0" description="Desça até o covil do mago e entre em seus aposentos, recupere minhas notas roubadas." />
+            <missionstate id="1" description="Você recuperou as notas de Eldric, retorne até ele para buscar sua recompensa." />
+            <missionstate id="2" description="Você ajudou com sucesso Eldric em sua primeira missão !" />
         </mission>
     </quest>
 </quests>

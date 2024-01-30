@@ -1,8 +1,7 @@
 ### localização x itens x monsters x level x UID
 
-58,167,9 - ? - GS_DRAGON_ - 40 - 1241 / 1242
+Notas de eldric
 
-130,351,10 - ? - Warlock_gs_dl - ? - 1230 / 1231 / 1232 / 1235
-
-387,382,7 tornar premium para usar  
-
+1 aceita a missao
+2 pega as notas
+3 retorna para eldric

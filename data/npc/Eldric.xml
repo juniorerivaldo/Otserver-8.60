@@ -1,9 +1,9 @@
-<npc name="Eldric" script="eldric.lua" walkinterval="0" speechbubble="3">
-	<health now="100" max="100"/>
-	<look type="129" head="95" body="116" legs="121" feet="115" addons="3"/>
-	<parameters>
-		<parameter key="message_greet" value="|PLAYERNAME|, VOCÊ ESTÁ PRONTO PARA ENFRENTAR SEU DESTINO?" />
-		<parameter key="message_walkaway" value="VOLTE QUANDO ESTIVER PRONTO PARA ENFRENTAR SEU DESTINO!" />
-		<parameter key="message_farewell" value="VOLTE QUANDO ESTIVER PRONTO PARA ENFRENTAR SEU DESTINO!" />
-	</parameters>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Eldric" script="eldric.lua" walkinterval="0" floorchange="0">
+    <health now="90" max="150"/>
+    <look type="148" head="40" body="45" legs="99" feet="79"/>
+    <parameters>
+        <parameter key="message_greet" value="Ola voce pode me, {ajudar} por favor!"/>
+    </parameters>
 </npc>
