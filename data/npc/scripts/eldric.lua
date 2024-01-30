@@ -22,7 +22,7 @@ local function creatureSayCallback(cid, type, msg)
     local player = Player(cid)
 
     if msgcontains(msg, "quest") then
-        local storageValue = player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes)
+        local storageValue = player:getStorageValue(PlayerStorageKeys.Quests.notasDeEldric)
         if storageValue < 0 then
             npcHandler:say("Would you like to start this quest?", cid)
             npcHandler.topic[cid] = 1
@@ -44,14 +44,14 @@ local function creatureSayCallback(cid, type, msg)
             return true
         end
         if player:getStorageValue(storageValue) < 0 then
-            player:setStorageValue(PlayerStorageKeys.Quests.eldricNotes, 0)
+            player:setStorageValue(PlayerStorageKeys.Quests.notasDeEldric, 0)
             print('valor tem q ser zero',storageValue)
             npcHandler:say("Cool. You have started the quest.", cid)
             player:addItem(2087,1)
             npcHandler.topic[cid] = 0
             return true
         end
-        player:setStorageValue(PlayerStorageKeys.Quests.eldricNotes, 2)
+        player:setStorageValue(PlayerStorageKeys.Quests.notasDeEldric, 2)
         npcHandler:say("Awesome. You have finished the quest.", cid)
         npcHandler.topic[cid] = 0
         return true
