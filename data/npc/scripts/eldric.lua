@@ -27,6 +27,7 @@ local function creatureSayCallback(cid, type, msg)
             npcHandler:say(
                 'va até o subsolo e encontre o covil do mago, e me traga a minha nota que esta escondida la.',
                 cid)
+            player:addItem(2087, 1)
         elseif questValue == 2 then
             local itemId = {2150, 2149, 2147, 2146}
             for i = 1, #itemId do player:addItem(itemId[i], 1) end
