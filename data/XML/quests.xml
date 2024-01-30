@@ -2,7 +2,8 @@
 <quests>
     <quest name="Example Quest I" startstorageid="45001" startstoragevalue="1">
         <mission name="Example Mission 1" storageid="45001" startvalue="1" endvalue="2" >
-            <missionstate id="1" description="Ask for quest again at the npc." />
+            <missionstate id="0" description="va pegar as notas." />
+            <missionstate id="1" description="voce pegou as notas." />
             <missionstate id="2" description="You successfully finished the quest." />
         </mission>
     </quest>
