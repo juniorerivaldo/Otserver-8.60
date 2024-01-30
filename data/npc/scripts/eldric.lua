@@ -22,8 +22,8 @@ local function creatureSayCallback(cid, type, msg)
     local player = Player(cid)
 
     if msgcontains(msg, "quest") then
-        print(player:setStorageValue(PlayerStorageKeys.Quests.notasDeEldric, 0))
         local storageValue = player:getStorageValue(PlayerStorageKeys.Quests.notasDeEldric)
+        print('valor tem q ser negativo',storageValue)
         if storageValue < 0 then
             npcHandler:say("Would you like to start this quest?", cid)
             npcHandler.topic[cid] = 1
