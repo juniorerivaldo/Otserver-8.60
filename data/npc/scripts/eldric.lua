@@ -24,8 +24,7 @@ local function creatureSayCallback(cid, type, msg)
                                  PlayerStorageKeys.Quests.eldricNotes)
         if storageValue == -1 then
             npcHandler:say("Would you like to start this quest?", cid)
-            print(player:getStorageValue(
-                PlayerStorageKeys.Quests.eldricNotes))
+            print(storageValue)
             npcHandler.topic[cid] = 0
             return true
         elseif storageValue == 1 then
@@ -41,6 +40,12 @@ local function creatureSayCallback(cid, type, msg)
     elseif npcHandler.topic[cid] == 1 then
         if not msgcontains(msg, "yes") then
             npcHandler:say("Another time then.", cid)
+            npcHandler.topic[cid] = 0
+            return true
+        end
+        if msgcontains(msg, "yes") then
+            npcHandler:say("Otimo.", cid)
+            player:setStorageValue(storage, 0)
             npcHandler.topic[cid] = 0
             return true
         end
