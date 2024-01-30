@@ -16,7 +16,7 @@ PlayerStorageKeys = {
     achievementsCounter = 20000,
 
 Quests = {
-        notasDeEldric = 3939, -- primeira quest em astória
+        notasDeEldric = 45001, -- primeira quest em astória
     },
     
     }
