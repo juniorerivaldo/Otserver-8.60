@@ -1,39 +1,63 @@
+local storage = 45001
+
 local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
 
-function onCreatureAppear(cid)            npcHandler:onCreatureAppear(cid)            end
-function onCreatureDisappear(cid)        npcHandler:onCreatureDisappear(cid)            end
-function onCreatureSay(cid, type, msg)        npcHandler:onCreatureSay(cid, type, msg)        end
-function onThink()                npcHandler:onThink()                    end
+function onCreatureAppear(cid)              npcHandler:onCreatureAppear(cid)            end
+function onCreatureDisappear(cid)           npcHandler:onCreatureDisappear(cid)         end
+function onCreatureSay(cid, type, msg)      npcHandler:onCreatureSay(cid, type, msg)    end
+function onThink()                          npcHandler:onThink()                        end
 
--- QUEST --
-function Task1(cid, message, keywords, parameters, node)
-
-local stor1 = 3939 -- this is the same STOR1 from quests.xml
-
-    if(not npcHandler:isFocused(cid)) then
-        return false
-    end
-
-    if getPlayerStorageValue(cid,stor1) < 0 then
-                npcHandler:say('Pegue esta chave para abrir o covil, ele se encontra abaixo da cidade no bueiro!',cid)
-            doPlayerAddItem(cid, 2087, 1)
-            doPlayerSetStorageValue(cid, stor1, 0)
-    elseif getPlayerStorageValue(cid, stor1) == 0 then
-                npcHandler:say('Estou aguardando minhas notas, apresse-se.',cid)
-    elseif getPlayerStorageValue(cid, stor1) == 1 then
-                npcHandler:say('Obrigado por recuperar minhas notas. tome esse dinheiro como recompensa.',cid)
-            doPlayerAddItem(cid, 2152, 25)
-            doPlayerSetStorageValue(cid, stor1, 2)
-                 doSendMagicEffect(getCreaturePosition(cid), 13)
-    elseif getPlayerStorageValue(cid, stor1) == 2 then
-                npcHandler:say('No momento nao tenho mais missoes para voce!',cid)
-    end
+local function greetCallback(cid)
+    npcHandler.topic[cid] = 0
+    return true
 end
 
-local node1 = keywordHandler:addKeyword({'ajudar'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'O mago branco roubou minhas notas, preciso de sua ajuda para recupera-las, pode me ajudar {sim}?'})
-      node1:addChildKeyword({'sim'}, Task1, {})
-    node1:addChildKeyword({'nao'}, StdModule.say, {npcHandler = npcHandler, onlyFocus = true, text = 'ok, alguem ira me ajudar.', reset = true})
+local function creatureSayCallback(cid, type, msg)
+    if not npcHandler:isFocused(cid) then
+        return false
+    end
+  
+    local player = Player(cid)
 
+    if msgcontains(msg, "quest") then
+        local storageValue = player:getStorageValue(storage)
+        if storageValue < 1 then
+            npcHandler:say("Would you like to start this quest?", cid)
+            npcHandler.topic[cid] = 1
+            return true
+        elseif storageValue == 1 then
+            npcHandler:say("Would you like to complete this quest?", cid)
+            npcHandler.topic[cid] = 1
+            return true
+        else
+            npcHandler:say("I have no more quests for you.", cid)
+            npcHandler.topic[cid] = 0
+            return true
+        end
+      
+    elseif npcHandler.topic[cid] == 1 then
+        if not msgcontains(msg, "yes") then
+            npcHandler:say("Another time then.", cid)
+            npcHandler.topic[cid] = 0
+            return true
+        end
+        if player:getStorageValue(storage) < 1 then
+            player:setStorageValue(storage, 1)
+            npcHandler:say("Cool. You have started the quest.", cid)
+            npcHandler.topic[cid] = 0
+            return true
+        end
+        player:setStorageValue(storage, 2)
+        npcHandler:say("Awesome. You have finished the quest.", cid)
+        npcHandler.topic[cid] = 0
+        return true
+      
+    end
+    return true
+end
+
+npcHandler:setCallback(CALLBACK_GREET, greetCallback)
+npcHandler:setCallback(CALLBACK_MESSAGE_DEFAULT, creatureSayCallback)
 npcHandler:addModule(FocusModule:new())
