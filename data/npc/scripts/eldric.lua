@@ -11,19 +11,22 @@ local function creatureSayCallback(cid, type, msg)
     if not npcHandler:isFocused(cid) then return false end
 
     local player = Player(cid)
+    local missionKeyword = 'mission'
 
-    if msgcontains(msg, 'mission') then
-        if player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes) == -1 then
+    if msgcontains(msg, missionKeyword) then
+        local questValue = player:getStorageValue(
+                               PlayerStorageKeys.Quests.eldricNotes)
+
+        if questValue == -1 then
             npcHandler:say({
                 'Oh, obrigado deuses por encontrar esse aventureiro. ...',
                 'preciso de sua ajuda para resgatar minhas notas que foram roubadas pelo mago!'
             }, cid)
-            npcHandler.topic[cid] = 2
-        elseif player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes) == 1 then
+        elseif questValue == 1 then
             npcHandler:say(
                 'va até o subsolo e encontre o covil do mago, e me traga a minha nota que esta escondida la.',
                 cid)
-        elseif player:getStorageValue(PlayerStorageKeys.Quests.eldricNotes) == 2 then
+        elseif questValue == 2 then
             local itemId = {2150, 2149, 2147, 2146}
             for i = 1, #itemId do player:addItem(itemId[i], 1) end
             player:setStorageValue(PlayerStorageKeys.Quests.eldricNotes, 3)
@@ -33,20 +36,6 @@ local function creatureSayCallback(cid, type, msg)
         else
             npcHandler:say('volte com minha nota o mais rapido possivel.', cid)
         end
-
-        -- Move this block outside the condition
-        player:addItem(2087, 1)
-        player:setStorageValue(PlayerStorageKeys.Quests.eldricNotes, 1)
-        npcHandler:say({
-            'PEGUE esta chave para acessar os aposentos do mago.'
-        }, cid)
-        npcHandler.topic[cid] = 0
-
-    else
-        npcHandler:say(
-            'Then the downfall of Carlin is inescapable. Please think about it. You know where to find me.',
-            cid)
-        npcHandler.topic[cid] = 0
     end
 
     return true
