@@ -3,7 +3,7 @@ Reserved storage ranges:
 - 300000 to 301000+ reserved for achievements
 - 20000 to 21000+ reserved for achievement progress
 - 10000000 to 20000000 reserved for outfits and mounts on source
-]]--
+]] --
 PlayerStorageKeys = {
     annihilatorReward = 30015,
     promotion = 30018,
@@ -15,11 +15,10 @@ PlayerStorageKeys = {
     achievementsBase = 300000,
     achievementsCounter = 20000,
 
-Quests = {
-        notasDeEldric = 45001, -- primeira quest em astória
-    },
-    
+    Quests = {
+        notasDeEldric = 45001 -- primeira quest em astória
     }
 
-GlobalStorageKeys = {
 }
+
+GlobalStorageKeys = {}
