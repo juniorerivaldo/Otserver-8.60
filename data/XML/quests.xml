@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quests>
     <quest name="Notas de Eldric" startstorageid="45001" startstoragevalue="0">
-        <mission name="Example Mission 1" storageid="45001" startvalue="0" endvalue="2" >
-            <missionstate id="0" description="va pegar as notas." />
-            <missionstate id="1" description="voce pegou as notas." />
-            <missionstate id="2" description="You successfully finished the quest." />
+        <mission name="Recuperando as notas do Eldric" storageid="45001" startvalue="0" endvalue="2" >
+            <missionstate id="0" description="Desca ate o covil do mago abaixo da cidade, la voce vai encontrar uma porta, use a chave e recupere minhas notas." />
+            <missionstate id="1" description="Voce pegou as notas, volte o mais breve a Eldric no tempo de Astoria." />
+            <missionstate id="2" description="Voce devolveu as notas a Eldric." />
         </mission>
     </quest>
 </quests>
