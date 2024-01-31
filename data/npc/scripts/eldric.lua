@@ -39,7 +39,7 @@ local function creatureSayCallback(cid, type, msg)
     -- starting quest
     if msgcontains(msg, "quest") and storage < 0 then
         npcHandler:say(
-            "Preciso que voce va até o subsolo da cidade para recuperar minhas notas, elas foram roubadas por algum mago! voce vai ? {sim}",
+            "Preciso que voce va ate o subsolo da cidade para recuperar minhas notas, elas foram roubadas por algum mago! voce vai ? {sim}",
             cid)
         npcHandler.topic[cid] = 1
 
@@ -64,8 +64,9 @@ local function creatureSayCallback(cid, type, msg)
     elseif storage > 0 and storage < 3 then
         if msgcontains(msg, "sim") then
             if storage == 1 then
-                player:addItem(2647, 1)
-                player:addItem(2463, 1)
+                -- player:addItem(2647, 1)
+                player:addItem(2160, 5)
+                doPlayerAddExp(cid, 3000)
                 player:setStorageValue(storage_1, 2)
                 player:removeItem(2087, 1)
                 player:removeItem(1948, 1)
