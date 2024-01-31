@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <quests>
-    <quest name="Notas de Eldric" startstorageid="45001" startstoragevalue="1">
+    <quest name="Notas de Eldric" startstorageid="45001" startstoragevalue="0">
         <mission name="Example Mission 1" storageid="45001" startvalue="0" endvalue="2" >
             <missionstate id="0" description="va pegar as notas." />
             <missionstate id="1" description="voce pegou as notas." />
