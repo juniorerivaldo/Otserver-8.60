@@ -21,9 +21,10 @@ local function greetCallback(cid)
     elseif storage == 1 then
         npcHandler:setMessage(MESSAGE_GREET, "Thank you for finding Rihanna!")
         return true
+    elseif storage == 2 then
+        npcHandler:setMessage(MESSAGE_GREET, "ja completou cai fora..")
+        return true
     end
-    npcHandler:setMessage(MESSAGE_GREET, "Hello! How can I help you?") -- should never see this message, based on how your npc is setup
-    return true
 end
 
 local function creatureSayCallback(cid, type, msg)
