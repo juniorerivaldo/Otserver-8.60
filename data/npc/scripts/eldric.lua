@@ -7,7 +7,7 @@ function onCreatureDisappear(cid)           npcHandler:onCreatureDisappear(cid) 
 function onCreatureSay(cid, type, msg)      npcHandler:onCreatureSay(cid, type, msg)    end
 function onThink()                          npcHandler:onThink()                        end
 
-local storage_1 = PlayerStorageKeys.Quests.notasDeEldric
+local storage_1 = 45001
 
 local function greetCallback(cid)
     local player = Player(cid)
@@ -15,10 +15,10 @@ local function greetCallback(cid)
     if storage < 0 then
         npcHandler:setMessage(MESSAGE_GREET, "Pode me ajudar com uma {quest}?")
         return true
-    elseif storage < 5 then
+    elseif storage < 1 then
         npcHandler:setMessage(MESSAGE_GREET, "Have you found her?")
         return true
-    elseif storage == 5 then
+    elseif storage == 2 then
         npcHandler:setMessage(MESSAGE_GREET, "Thank you for finding Rihanna!")
         return true
     end
