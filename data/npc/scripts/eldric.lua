@@ -2,10 +2,10 @@ local keywordHandler = KeywordHandler:new()
 local npcHandler = NpcHandler:new(keywordHandler)
 NpcSystem.parseParameters(npcHandler)
 
-function onCreatureAppear(cid)              npcHandler:onCreatureAppear(cid)            end
-function onCreatureDisappear(cid)           npcHandler:onCreatureDisappear(cid)         end
-function onCreatureSay(cid, type, msg)      npcHandler:onCreatureSay(cid, type, msg)    end
-function onThink()                          npcHandler:onThink()                        end
+function onCreatureAppear(cid) npcHandler:onCreatureAppear(cid) end
+function onCreatureDisappear(cid) npcHandler:onCreatureDisappear(cid) end
+function onCreatureSay(cid, type, msg) npcHandler:onCreatureSay(cid, type, msg) end
+function onThink() npcHandler:onThink() end
 
 local storage_1 = 45001
 
@@ -18,7 +18,7 @@ local function greetCallback(cid)
     elseif storage < 1 then
         npcHandler:setMessage(MESSAGE_GREET, "Have you found her?")
         return true
-    elseif storage == 2 then
+    elseif storage == 1 then
         npcHandler:setMessage(MESSAGE_GREET, "Thank you for finding Rihanna!")
         return true
     end
@@ -59,15 +59,10 @@ local function creatureSayCallback(cid, type, msg)
                 npcHandler:say(
                     "Thank you for finding her! Now I need to put my moves in.. Here, take this a reward!",
                     cid)
-            else
-                npcHandler:say(
-                    "It doesn't seem like you've found her? Please continue your quest to find her..!",
-                    cid)
+            elseif storage == 2 then
+                npcHandler:say("completou ja não tem mais nada pra fazer aqui",
+                               cid)
             end
-        else
-            npcHandler:say(
-                "Please continue your quest to find her! I will be so grateful..",
-                cid)
         end
 
     end
