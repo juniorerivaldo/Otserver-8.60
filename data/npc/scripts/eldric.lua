@@ -20,7 +20,7 @@ local function greetCallback(cid)
         npcHandler:setMessage(MESSAGE_GREET, "Ja encontrou minhas notas?")
         return true
     elseif storage == 1 then
-        npcHandler:setMessage(MESSAGE_GREET, "Ohh, sabia que poderia contar com voce!")
+        npcHandler:setMessage(MESSAGE_GREET, "Voce trouxe minhas notas {sim}?")
         return true
     elseif storage == 2 then
         npcHandler:setMessage(MESSAGE_GREET, "Bom dia caro aventureiro, como voce esta hoje?")
@@ -45,7 +45,8 @@ local function creatureSayCallback(cid, type, msg)
             player:setStorageValue(storage_1, 0)
             npcHandler:say("Pegue essa chave para abrir a porta do covil, depois me devolva ela.", cid)
             player:addItem(2087,1)
-            player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Voce recebeu a chave do covil!')
+            addEvent(function()
+            player:sendTextMessage(MESSAGE_EVENT_ADVANCE, 'Voce recebeu a chave do covil!'),1500)
         else
             npcHandler:say("Muito bem.", cid)
         end
