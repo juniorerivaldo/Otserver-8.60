@@ -1,5 +1,5 @@
 ### ASTORIA
-    NPC TEMPLO - Eldric - Da boas vindas e passa a primeira missão
+    NPC TEMPLO - Eldric - Da boas vindas e passa a primeira missão - OK
     NPC ARQUEIRO - Voren - compra e vende itens de paladin
     NPC SWORDS E SHIELDS - Thorne - compra e vende itens basicos de sword e shield e axe
     NPC ARMOURS - Galen - compra e vende itens basicos de armour 
