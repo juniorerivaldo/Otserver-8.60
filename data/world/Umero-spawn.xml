@@ -3,6 +3,9 @@
 	<spawn centerx="1034" centery="1031" centerz="5" radius="1">
 		<npc name="Eldric" x="0" y="1" z="5" spawntime="60" />
 	</spawn>
+	<spawn centerx="1022" centery="1051" centerz="5" radius="1">
+		<npc name="Voren" x="0" y="0" z="5" spawntime="60" />
+	</spawn>
 	<spawn centerx="1029" centery="1003" centerz="6" radius="1">
 		<monster name="Skeleton" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
