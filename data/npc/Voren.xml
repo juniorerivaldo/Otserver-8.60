@@ -3,6 +3,6 @@
 	<health now="100" max="100"/>
 	<look type="137" head="95" body="116" legs="121" feet="115" addons="3"/>
 	<parameters>
-		<parameter key="message_greet" value="Olá |PLAYERNAME|.Flechas | Bolts Spears e muito mais aqui diga {trade}! para iniciar a negociação." />
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Eu tenho Flechas | Bolts Spears e muito mais aqui diga {trade}! para iniciar a negociação." />
 	</parameters>
 </npc>
